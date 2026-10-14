@@ -1,0 +1,11 @@
+{
+  "name": "hyperframe-pro",
+  "displayName": "Hyperframe Pro",
+  "description": "A production layer for HyperFrames. Plan beats before writing code, enforce retention with a lint that fails the build, lock every animation cue to a voice-over word, generate photoreal plates for hook beats, and revise a finished video without re-recording it.",
+  "version": "1.0.0",
+  "author": { "name": "Hanif", "url": "https://github.com/buildwithhanif" },
+  "homepage": "https://github.com/06051gmbdg-prog/Abidin-hyperframe-pro.",
+  "repository": "https://github.com/06051gmbdg-prog/Abidin-hyperframe-pro.",
+  "license": "MIT",
+  "keywords": ["video", "hyperframes", "shortform", "retention", "tts", "gsap", "ffmpeg"]
+}
