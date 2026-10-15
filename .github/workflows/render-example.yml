@@ -1,0 +1,41 @@
+# Renders example/ to an MP4 on GitHub's servers and attaches it to the run.
+# Run it from the Actions tab (works from a phone browser), then download the "example-mp4" artifact.
+name: render-example
+on:
+  workflow_dispatch:
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: example
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Build composition
+        run: node build.mjs .
+      - name: Lint (retention checks)
+        run: node ../plugins/hyperframe-pro/scripts/lint.mjs . build.mjs
+      - name: Composition checks
+        run: npx -y hyperframes check
+        continue-on-error: true
+      - name: Render MP4
+        run: npx -y hyperframes render
+      - name: Contact sheet (1 frame per second)
+        run: |
+          mp4=$(find . -name '*.mp4' | head -n1)
+          echo "Rendered: $mp4"
+          ffprobe -v error -show_entries format=duration -of csv=p=0 "$mp4"
+          ffmpeg -nostdin -loglevel error -y -i "$mp4" -vf "fps=1,scale=180:-2,tile=6x3" -frames:v 1 contact-sheet.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: example-mp4
+          path: |
+            example/**/*.mp4
+            example/contact-sheet.png
+          if-no-files-found: error
