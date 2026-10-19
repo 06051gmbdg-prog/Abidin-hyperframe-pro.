@@ -3,6 +3,8 @@
 name: render-example
 on:
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -39,3 +41,16 @@ jobs:
             example/**/*.mp4
             example/contact-sheet.png
           if-no-files-found: error
+      - name: Save MP4 to the "renders" branch (easy download from phone)
+        working-directory: .
+        run: |
+          mkdir -p /tmp/out
+          cp "$(find example -name '*.mp4' | head -n1)" /tmp/out/example.mp4
+          cp example/contact-sheet.png /tmp/out/contact-sheet.png
+          cd /tmp/out
+          git init -q -b renders
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Render of example (run ${{ github.run_number }})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" renders
