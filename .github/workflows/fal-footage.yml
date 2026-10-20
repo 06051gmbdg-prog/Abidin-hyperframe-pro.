@@ -1,0 +1,71 @@
+# One paid generation per run, on purpose. Results are saved to the branch `footage` so you can review them
+# before they are used in a video. Needs the repo secret FAL_KEY.
+#   action = probe  -> checks the key and connection, costs nothing
+#   action = image  -> ONE still from openai/gpt-image-2 (paid)
+#   action = video  -> ONE clip from minimax/h3-max/image-to-video, starting from an image already in the branch (paid)
+name: fal-footage
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "probe | image | video"
+        default: probe
+      name:
+        description: "File name without extension (e.g. hook1)"
+        default: hook1
+      prompt:
+        description: "Prompt (image/video). Describe the camera, not 'cinematic 8K'."
+        default: ""
+      duration:
+        description: "Video seconds (max 10)"
+        default: "4"
+permissions:
+  contents: write
+jobs:
+  fal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check secret
+        env:
+          KEY: ${{ secrets.FAL_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::error::Secret FAL_KEY is missing (Settings > Secrets and variables > Actions)"; exit 1; fi
+      - name: Probe (free)
+        if: ${{ inputs.action == 'probe' }}
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+        run: node plugins/hyperframe-pro/scripts/fal.mjs probe
+      - name: Load existing footage branch
+        if: ${{ inputs.action != 'probe' }}
+        run: |
+          git clone -q --branch footage --single-branch "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" /tmp/footage 2>/dev/null || { mkdir -p /tmp/footage && cd /tmp/footage && git init -q -b footage; }
+      - name: Generate ONE image
+        if: ${{ inputs.action == 'image' }}
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          PROMPT: ${{ inputs.prompt }}
+        run: |
+          if [ -z "$PROMPT" ]; then echo "::error::prompt is empty"; exit 1; fi
+          node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.png" --size 1088x1920 --quality high
+      - name: Generate ONE video clip
+        if: ${{ inputs.action == 'video' }}
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          PROMPT: ${{ inputs.prompt }}
+        run: |
+          test -f "/tmp/footage/${{ inputs.name }}.png" || { echo "::error::${{ inputs.name }}.png not found in branch footage - generate the image first (action=image, same name)"; exit 1; }
+          node plugins/hyperframe-pro/scripts/fal.mjs video --image "/tmp/footage/${{ inputs.name }}.png" --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.mp4" --duration "${{ inputs.duration }}" --resolution 768P
+      - name: Save to branch footage
+        if: ${{ inputs.action != 'probe' }}
+        run: |
+          cd /tmp/footage
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "footage: ${{ inputs.action }} ${{ inputs.name }} (run ${{ github.run_number }})"
+          git push "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" footage
