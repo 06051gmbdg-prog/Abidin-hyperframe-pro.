@@ -1,0 +1,75 @@
+# Generates ONE paid asset with fal.ai and commits it to the repo, so later renders reuse it for free.
+#   action = probe : checks the FAL_KEY works. Free. Run this first.
+#   action = image : one still (gpt-image-2). Look at it before spending on a video.
+#   action = video : animates an existing still (image-to-video, 768P, max 10 s).
+# Needs the repo secret FAL_KEY.
+name: generate-footage
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "probe (free) / image / video"
+        type: choice
+        options: [probe, image, video]
+        default: probe
+      name:
+        description: "File name without extension"
+        default: hook-bank
+      prompt:
+        description: "Prompt (image or video)"
+        default: "Candid documentary photo, vertical. Inside an Indonesian bank branch, a middle-aged man in a plain shirt holds an ID card out across the customer service counter while a young female teller shakes her head apologetically. Late afternoon fluorescent lighting, shallow depth of field, slight sensor noise and grain, muted colours, handheld smartphone realism, not cinematic. No readable text, no logos, no watermarks, faces natural."
+      source_image:
+        description: "video only: path of the still, e.g. videos/pindah-ktp/assets/footage/hook-bank.png"
+        default: ""
+      duration:
+        description: "video only: seconds (max 10)"
+        default: "5"
+      folder:
+        description: "Where to save"
+        default: videos/pindah-ktp/assets/footage
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check secret
+        env:
+          KEY: ${{ secrets.FAL_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::error::Secret FAL_KEY is missing (Settings > Secrets and variables > Actions)"; exit 1; fi
+      - name: Run fal.ai
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          ACTION: ${{ inputs.action }}
+          NAME: ${{ inputs.name }}
+          PROMPT: ${{ inputs.prompt }}
+          SRC: ${{ inputs.source_image }}
+          DUR: ${{ inputs.duration }}
+          FOLDER: ${{ inputs.folder }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$FOLDER"
+          case "$ACTION" in
+            probe)
+              node plugins/hyperframe-pro/scripts/fal.mjs probe ;;
+            image)
+              node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --size 1088x1920 --out "$FOLDER/$NAME.png" ;;
+            video)
+              [ -f "$SRC" ] || { echo "::error::source_image '$SRC' not found in the repo"; exit 1; }
+              node plugins/hyperframe-pro/scripts/fal.mjs video --image "$SRC" --prompt "$PROMPT" --duration "$DUR" --resolution 768P --out "$FOLDER/$NAME.mp4" ;;
+          esac
+      - name: Commit the result
+        if: ${{ inputs.action != 'probe' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "${{ inputs.folder }}"
+          git commit -m "Footage: ${{ inputs.name }} (${{ inputs.action }})"
+          git pull --rebase -q origin main
+          git push origin HEAD:main
