@@ -138,7 +138,8 @@ scenes.forEach((sc, si) => {
     const left = it.x === "r" ? 560 : it.x === "r2" ? 560 : 70;
     els.push(`<div id="${it.id}" class="ct" style="top:${it.y}px;font-size:${it.size}px;color:${it.color || INK};${it.x ? `left:${left}px;right:70px;text-align:left;${it.x === "r2" ? "top:" + (it.y + 90) + "px;" : ""}` : ""}">${it.html}</div>`);
     if (sc.end != null) {
-      const out = fx(sc.end - 0.42);
+      // never schedule the exit before the element has finished entering (a late cue + early next scene = stuck on screen)
+      const out = fx(Math.max(sc.end - 0.42, at + 0.45));
       tl.push(`tl.to("#${it.id}",{autoAlpha:0,y:-30,duration:0.22,ease:"power2.in"},${out});`);
       tl.push(`tl.set("#${it.id}",{autoAlpha:0},${fx(out + 0.22)});`);
     }
