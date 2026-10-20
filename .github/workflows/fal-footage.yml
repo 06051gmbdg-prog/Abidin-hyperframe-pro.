@@ -39,7 +39,10 @@ jobs:
         if: ${{ inputs.action == 'probe' }}
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
-        run: node plugins/hyperframe-pro/scripts/fal.mjs probe
+        run: |
+          set -o pipefail
+          node plugins/hyperframe-pro/scripts/fal.mjs probe 2>&1 | tee /tmp/fal.log
+          echo "::notice title=fal probe::$(tail -n 3 /tmp/fal.log | tr '\n' ' ')"
       - name: Load existing footage branch
         if: ${{ inputs.action != 'probe' }}
         run: |
@@ -51,7 +54,8 @@ jobs:
           PROMPT: ${{ inputs.prompt }}
         run: |
           if [ -z "$PROMPT" ]; then echo "::error::prompt is empty"; exit 1; fi
-          node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.png" --size 1088x1920 --quality high
+          set -o pipefail
+          node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.png" --size 1088x1920 --quality high 2>&1 | tee /tmp/fal.log || { echo "::error title=fal.ai error::$(tail -n 6 /tmp/fal.log | tr '\n' ' ' | cut -c1-1200)"; exit 1; }
       - name: Generate ONE video clip
         if: ${{ inputs.action == 'video' }}
         env:
@@ -59,7 +63,8 @@ jobs:
           PROMPT: ${{ inputs.prompt }}
         run: |
           test -f "/tmp/footage/${{ inputs.name }}.png" || { echo "::error::${{ inputs.name }}.png not found in branch footage - generate the image first (action=image, same name)"; exit 1; }
-          node plugins/hyperframe-pro/scripts/fal.mjs video --image "/tmp/footage/${{ inputs.name }}.png" --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.mp4" --duration "${{ inputs.duration }}" --resolution 768P
+          set -o pipefail
+          node plugins/hyperframe-pro/scripts/fal.mjs video --image "/tmp/footage/${{ inputs.name }}.png" --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.mp4" --duration "${{ inputs.duration }}" --resolution 768P 2>&1 | tee /tmp/fal.log || { echo "::error title=fal.ai error::$(tail -n 6 /tmp/fal.log | tr '\n' ' ' | cut -c1-1200)"; exit 1; }
       - name: Save to branch footage
         if: ${{ inputs.action != 'probe' }}
         run: |
