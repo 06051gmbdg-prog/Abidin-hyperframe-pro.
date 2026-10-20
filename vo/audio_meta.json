@@ -1,0 +1,1486 @@
+{
+ "voiceId": "pNInz6obpgDQGcFmaJgB",
+ "modelId": "eleven_multilingual_v2",
+ "scenes": [
+  {
+   "id": "vo",
+   "text": "KTP Anda masih beralamat di kota lama, padahal Anda sudah tinggal di kota baru. Mau buka rekening, urus BPJS, atau daftarkan sekolah anak, semuanya jadi tertahan. Kabar baiknya, pindah domisili itu gratis, dan sekarang umumnya tidak perlu lagi surat pengantar RT atau RW. Cukup empat langkah. Langkah satu. Siapkan dokumen. Anda butuh KTP elektronik asli, fotokopi Kartu Keluarga, dan formulir F satu nol tiga, yang tersedia di kantor Dukcapil. Langkah dua. Datang ke Dukcapil di kota lama Anda. Minta Surat Keterangan Pindah, atau S K P W N I. Surat inilah tiket Anda untuk pindah. Langkah tiga. Bawa surat itu ke Dukcapil di kota baru. Kalau Anda menumpang atau mengontrak, bawa juga surat pernyataan dari pemilik rumah bahwa ia tidak keberatan. Langkah empat. Terima Kartu Keluarga baru dan KTP elektronik baru dengan alamat baru. KTP lama dibatalkan, jadi jangan dipakai lagi. Sebelum pulang, periksa nama, nomor induk, dan alamat di kartu baru. Satu huruf yang salah bisa merepotkan urusan Anda nanti. Sudah tinggal di kota baru, tapi belum sempat mengurus surat pindah? Tenang. Dukcapil kota baru bisa menghubungi Dukcapil kota lama untuk Anda. Kalau ada anak di bawah tujuh belas tahun yang tidak ikut pindah, siapkan anggota keluarga dewasa yang bersedia menjadi kepala keluarga mereka. Satu hal penting: aturan tiap daerah bisa sedikit berbeda, dan banyak Dukcapil sudah menyediakan layanan online. Cek situs resminya dulu, supaya Anda tidak antre sia-sia. Malam ini, cari situs Dukcapil kota Anda, dan lihat apakah pindah domisili bisa diurus online.",
+   "wav": "vo.wav",
+   "duration": 124.134,
+   "speechStart": 0.07,
+   "speechEnd": 124.017,
+   "words": [
+    {
+     "id": "w0",
+     "text": "KTP",
+     "start": 0.07,
+     "end": 0.383
+    },
+    {
+     "id": "w1",
+     "text": "Anda",
+     "start": 0.464,
+     "end": 0.639
+    },
+    {
+     "id": "w2",
+     "text": "masih",
+     "start": 0.685,
+     "end": 0.906
+    },
+    {
+     "id": "w3",
+     "text": "beralamat",
+     "start": 0.929,
+     "end": 1.451
+    },
+    {
+     "id": "w4",
+     "text": "di",
+     "start": 1.498,
+     "end": 1.556
+    },
+    {
+     "id": "w5",
+     "text": "kota",
+     "start": 1.602,
+     "end": 1.823
+    },
+    {
+     "id": "w6",
+     "text": "lama,",
+     "start": 1.869,
+     "end": 2.322
+    },
+    {
+     "id": "w7",
+     "text": "padahal",
+     "start": 2.531,
+     "end": 2.914
+    },
+    {
+     "id": "w8",
+     "text": "Anda",
+     "start": 2.995,
+     "end": 3.262
+    },
+    {
+     "id": "w9",
+     "text": "sudah",
+     "start": 3.309,
+     "end": 3.541
+    },
+    {
+     "id": "w10",
+     "text": "tinggal",
+     "start": 3.576,
+     "end": 3.924
+    },
+    {
+     "id": "w11",
+     "text": "di",
+     "start": 3.982,
+     "end": 4.04
+    },
+    {
+     "id": "w12",
+     "text": "kota",
+     "start": 4.087,
+     "end": 4.307
+    },
+    {
+     "id": "w13",
+     "text": "baru.",
+     "start": 4.365,
+     "end": 4.876
+    },
+    {
+     "id": "w14",
+     "text": "Mau",
+     "start": 5.317,
+     "end": 5.492
+    },
+    {
+     "id": "w15",
+     "text": "buka",
+     "start": 5.538,
+     "end": 5.759
+    },
+    {
+     "id": "w16",
+     "text": "rekening,",
+     "start": 5.817,
+     "end": 6.629
+    },
+    {
+     "id": "w17",
+     "text": "urus",
+     "start": 6.908,
+     "end": 7.163
+    },
+    {
+     "id": "w18",
+     "text": "BPJS,",
+     "start": 7.233,
+     "end": 8.313
+    },
+    {
+     "id": "w19",
+     "text": "atau",
+     "start": 8.464,
+     "end": 8.731
+    },
+    {
+     "id": "w20",
+     "text": "daftarkan",
+     "start": 8.777,
+     "end": 9.346
+    },
+    {
+     "id": "w21",
+     "text": "sekolah",
+     "start": 9.416,
+     "end": 9.822
+    },
+    {
+     "id": "w22",
+     "text": "anak,",
+     "start": 9.88,
+     "end": 10.449
+    },
+    {
+     "id": "w23",
+     "text": "semuanya",
+     "start": 10.693,
+     "end": 11.122
+    },
+    {
+     "id": "w24",
+     "text": "jadi",
+     "start": 11.18,
+     "end": 11.355
+    },
+    {
+     "id": "w25",
+     "text": "tertahan.",
+     "start": 11.401,
+     "end": 12.26
+    },
+    {
+     "id": "w26",
+     "text": "Kabar",
+     "start": 12.585,
+     "end": 12.852
+    },
+    {
+     "id": "w27",
+     "text": "baiknya,",
+     "start": 12.922,
+     "end": 13.444
+    },
+    {
+     "id": "w28",
+     "text": "pindah",
+     "start": 13.572,
+     "end": 13.92
+    },
+    {
+     "id": "w29",
+     "text": "domisili",
+     "start": 13.955,
+     "end": 14.536
+    },
+    {
+     "id": "w30",
+     "text": "itu",
+     "start": 14.605,
+     "end": 14.826
+    },
+    {
+     "id": "w31",
+     "text": "gratis,",
+     "start": 14.884,
+     "end": 15.557
+    },
+    {
+     "id": "w32",
+     "text": "dan",
+     "start": 15.732,
+     "end": 15.894
+    },
+    {
+     "id": "w33",
+     "text": "sekarang",
+     "start": 15.975,
+     "end": 16.428
+    },
+    {
+     "id": "w34",
+     "text": "umumnya",
+     "start": 16.544,
+     "end": 17.183
+    },
+    {
+     "id": "w35",
+     "text": "tidak",
+     "start": 17.357,
+     "end": 17.636
+    },
+    {
+     "id": "w36",
+     "text": "perlu",
+     "start": 17.659,
+     "end": 17.914
+    },
+    {
+     "id": "w37",
+     "text": "lagi",
+     "start": 17.984,
+     "end": 18.367
+    },
+    {
+     "id": "w38",
+     "text": "surat",
+     "start": 18.611,
+     "end": 18.994
+    },
+    {
+     "id": "w39",
+     "text": "pengantar",
+     "start": 19.041,
+     "end": 19.644
+    },
+    {
+     "id": "w40",
+     "text": "RT",
+     "start": 19.749,
+     "end": 20.039
+    },
+    {
+     "id": "w41",
+     "text": "atau",
+     "start": 20.341,
+     "end": 20.689
+    },
+    {
+     "id": "w42",
+     "text": "RW.",
+     "start": 20.829,
+     "end": 21.502
+    },
+    {
+     "id": "w43",
+     "text": "Cukup",
+     "start": 21.792,
+     "end": 22.117
+    },
+    {
+     "id": "w44",
+     "text": "empat",
+     "start": 22.175,
+     "end": 22.454
+    },
+    {
+     "id": "w45",
+     "text": "langkah.",
+     "start": 22.512,
+     "end": 23.046
+    },
+    {
+     "id": "w46",
+     "text": "Langkah",
+     "start": 23.51,
+     "end": 23.812
+    },
+    {
+     "id": "w47",
+     "text": "satu.",
+     "start": 23.859,
+     "end": 24.393
+    },
+    {
+     "id": "w48",
+     "text": "Siapkan",
+     "start": 24.788,
+     "end": 25.205
+    },
+    {
+     "id": "w49",
+     "text": "dokumen.",
+     "start": 25.252,
+     "end": 25.914
+    },
+    {
+     "id": "w50",
+     "text": "Anda",
+     "start": 26.262,
+     "end": 26.517
+    },
+    {
+     "id": "w51",
+     "text": "butuh",
+     "start": 26.575,
+     "end": 26.924
+    },
+    {
+     "id": "w52",
+     "text": "KTP",
+     "start": 26.97,
+     "end": 27.295
+    },
+    {
+     "id": "w53",
+     "text": "elektronik",
+     "start": 27.4,
+     "end": 27.934
+    },
+    {
+     "id": "w54",
+     "text": "asli,",
+     "start": 28.003,
+     "end": 28.607
+    },
+    {
+     "id": "w55",
+     "text": "fotokopi",
+     "start": 28.712,
+     "end": 29.281
+    },
+    {
+     "id": "w56",
+     "text": "Kartu",
+     "start": 29.327,
+     "end": 29.606
+    },
+    {
+     "id": "w57",
+     "text": "Keluarga,",
+     "start": 29.652,
+     "end": 30.337
+    },
+    {
+     "id": "w58",
+     "text": "dan",
+     "start": 30.442,
+     "end": 30.581
+    },
+    {
+     "id": "w59",
+     "text": "formulir",
+     "start": 30.651,
+     "end": 31.138
+    },
+    {
+     "id": "w60",
+     "text": "F",
+     "start": 31.208,
+     "end": 31.359
+    },
+    {
+     "id": "w61",
+     "text": "satu",
+     "start": 31.428,
+     "end": 31.661
+    },
+    {
+     "id": "w62",
+     "text": "nol",
+     "start": 31.73,
+     "end": 31.858
+    },
+    {
+     "id": "w63",
+     "text": "tiga,",
+     "start": 31.904,
+     "end": 32.346
+    },
+    {
+     "id": "w64",
+     "text": "yang",
+     "start": 32.485,
+     "end": 32.647
+    },
+    {
+     "id": "w65",
+     "text": "tersedia",
+     "start": 32.706,
+     "end": 33.216
+    },
+    {
+     "id": "w66",
+     "text": "di",
+     "start": 33.251,
+     "end": 33.321
+    },
+    {
+     "id": "w67",
+     "text": "kantor",
+     "start": 33.344,
+     "end": 33.704
+    },
+    {
+     "id": "w68",
+     "text": "Dukcapil.",
+     "start": 33.774,
+     "end": 34.598
+    },
+    {
+     "id": "w69",
+     "text": "Langkah",
+     "start": 34.946,
+     "end": 35.341
+    },
+    {
+     "id": "w70",
+     "text": "dua.",
+     "start": 35.399,
+     "end": 35.887
+    },
+    {
+     "id": "w71",
+     "text": "Datang",
+     "start": 36.177,
+     "end": 36.56
+    },
+    {
+     "id": "w72",
+     "text": "ke",
+     "start": 36.618,
+     "end": 36.699
+    },
+    {
+     "id": "w73",
+     "text": "Dukcapil",
+     "start": 36.757,
+     "end": 37.384
+    },
+    {
+     "id": "w74",
+     "text": "di",
+     "start": 37.57,
+     "end": 37.686
+    },
+    {
+     "id": "w75",
+     "text": "kota",
+     "start": 37.733,
+     "end": 38.046
+    },
+    {
+     "id": "w76",
+     "text": "lama",
+     "start": 38.116,
+     "end": 38.36
+    },
+    {
+     "id": "w77",
+     "text": "Anda.",
+     "start": 38.429,
+     "end": 38.975
+    },
+    {
+     "id": "w78",
+     "text": "Minta",
+     "start": 39.172,
+     "end": 39.683
+    },
+    {
+     "id": "w79",
+     "text": "Surat",
+     "start": 39.764,
+     "end": 40.113
+    },
+    {
+     "id": "w80",
+     "text": "Keterangan",
+     "start": 40.159,
+     "end": 40.635
+    },
+    {
+     "id": "w81",
+     "text": "Pindah,",
+     "start": 40.716,
+     "end": 41.297
+    },
+    {
+     "id": "w82",
+     "text": "atau",
+     "start": 41.459,
+     "end": 41.866
+    },
+    {
+     "id": "w83",
+     "text": "S",
+     "start": 41.97,
+     "end": 42.202
+    },
+    {
+     "id": "w84",
+     "text": "K",
+     "start": 42.353,
+     "end": 42.411
+    },
+    {
+     "id": "w85",
+     "text": "P",
+     "start": 42.609,
+     "end": 42.748
+    },
+    {
+     "id": "w86",
+     "text": "W",
+     "start": 42.992,
+     "end": 43.131
+    },
+    {
+     "id": "w87",
+     "text": "N",
+     "start": 43.294,
+     "end": 43.503
+    },
+    {
+     "id": "w88",
+     "text": "I.",
+     "start": 43.607,
+     "end": 44.048
+    },
+    {
+     "id": "w89",
+     "text": "Surat",
+     "start": 44.316,
+     "end": 44.664
+    },
+    {
+     "id": "w90",
+     "text": "inilah",
+     "start": 44.733,
+     "end": 45.14
+    },
+    {
+     "id": "w91",
+     "text": "tiket",
+     "start": 45.198,
+     "end": 45.569
+    },
+    {
+     "id": "w92",
+     "text": "Anda",
+     "start": 45.651,
+     "end": 46.022
+    },
+    {
+     "id": "w93",
+     "text": "untuk",
+     "start": 46.103,
+     "end": 46.405
+    },
+    {
+     "id": "w94",
+     "text": "pindah.",
+     "start": 46.452,
+     "end": 47.079
+    },
+    {
+     "id": "w95",
+     "text": "Langkah",
+     "start": 47.392,
+     "end": 47.833
+    },
+    {
+     "id": "w96",
+     "text": "tiga.",
+     "start": 47.891,
+     "end": 48.46
+    },
+    {
+     "id": "w97",
+     "text": "Bawa",
+     "start": 48.878,
+     "end": 49.168
+    },
+    {
+     "id": "w98",
+     "text": "surat",
+     "start": 49.215,
+     "end": 49.505
+    },
+    {
+     "id": "w99",
+     "text": "itu",
+     "start": 49.575,
+     "end": 49.842
+    },
+    {
+     "id": "w100",
+     "text": "ke",
+     "start": 49.912,
+     "end": 49.981
+    },
+    {
+     "id": "w101",
+     "text": "Dukcapil",
+     "start": 50.039,
+     "end": 50.608
+    },
+    {
+     "id": "w102",
+     "text": "di",
+     "start": 50.678,
+     "end": 50.736
+    },
+    {
+     "id": "w103",
+     "text": "kota",
+     "start": 50.782,
+     "end": 50.98
+    },
+    {
+     "id": "w104",
+     "text": "baru.",
+     "start": 51.026,
+     "end": 51.467
+    },
+    {
+     "id": "w105",
+     "text": "Kalau",
+     "start": 51.641,
+     "end": 51.897
+    },
+    {
+     "id": "w106",
+     "text": "Anda",
+     "start": 51.955,
+     "end": 52.187
+    },
+    {
+     "id": "w107",
+     "text": "menumpang",
+     "start": 52.234,
+     "end": 52.744
+    },
+    {
+     "id": "w108",
+     "text": "atau",
+     "start": 52.802,
+     "end": 52.988
+    },
+    {
+     "id": "w109",
+     "text": "mengontrak,",
+     "start": 53.035,
+     "end": 53.824
+    },
+    {
+     "id": "w110",
+     "text": "bawa",
+     "start": 53.987,
+     "end": 54.288
+    },
+    {
+     "id": "w111",
+     "text": "juga",
+     "start": 54.358,
+     "end": 54.601
+    },
+    {
+     "id": "w112",
+     "text": "surat",
+     "start": 54.648,
+     "end": 54.985
+    },
+    {
+     "id": "w113",
+     "text": "pernyataan",
+     "start": 55.043,
+     "end": 55.762
+    },
+    {
+     "id": "w114",
+     "text": "dari",
+     "start": 55.832,
+     "end": 56.041
+    },
+    {
+     "id": "w115",
+     "text": "pemilik",
+     "start": 56.099,
+     "end": 56.482
+    },
+    {
+     "id": "w116",
+     "text": "rumah",
+     "start": 56.54,
+     "end": 57.016
+    },
+    {
+     "id": "w117",
+     "text": "bahwa",
+     "start": 57.341,
+     "end": 57.678
+    },
+    {
+     "id": "w118",
+     "text": "ia",
+     "start": 57.794,
+     "end": 58.084
+    },
+    {
+     "id": "w119",
+     "text": "tidak",
+     "start": 58.143,
+     "end": 58.491
+    },
+    {
+     "id": "w120",
+     "text": "keberatan.",
+     "start": 58.537,
+     "end": 59.42
+    },
+    {
+     "id": "w121",
+     "text": "Langkah",
+     "start": 60.012,
+     "end": 60.395
+    },
+    {
+     "id": "w122",
+     "text": "empat.",
+     "start": 60.43,
+     "end": 61.022
+    },
+    {
+     "id": "w123",
+     "text": "Terima",
+     "start": 61.347,
+     "end": 61.765
+    },
+    {
+     "id": "w124",
+     "text": "Kartu",
+     "start": 61.834,
+     "end": 62.136
+    },
+    {
+     "id": "w125",
+     "text": "Keluarga",
+     "start": 62.194,
+     "end": 62.705
+    },
+    {
+     "id": "w126",
+     "text": "baru",
+     "start": 62.763,
+     "end": 63.251
+    },
+    {
+     "id": "w127",
+     "text": "dan",
+     "start": 63.344,
+     "end": 63.495
+    },
+    {
+     "id": "w128",
+     "text": "KTP",
+     "start": 63.611,
+     "end": 64.075
+    },
+    {
+     "id": "w129",
+     "text": "elektronik",
+     "start": 64.249,
+     "end": 64.969
+    },
+    {
+     "id": "w130",
+     "text": "baru",
+     "start": 65.05,
+     "end": 65.619
+    },
+    {
+     "id": "w131",
+     "text": "dengan",
+     "start": 65.817,
+     "end": 66.107
+    },
+    {
+     "id": "w132",
+     "text": "alamat",
+     "start": 66.188,
+     "end": 66.537
+    },
+    {
+     "id": "w133",
+     "text": "baru.",
+     "start": 66.595,
+     "end": 67.117
+    },
+    {
+     "id": "w134",
+     "text": "KTP",
+     "start": 67.5,
+     "end": 67.872
+    },
+    {
+     "id": "w135",
+     "text": "lama",
+     "start": 67.999,
+     "end": 68.313
+    },
+    {
+     "id": "w136",
+     "text": "dibatalkan,",
+     "start": 68.371,
+     "end": 69.021
+    },
+    {
+     "id": "w137",
+     "text": "jadi",
+     "start": 69.044,
+     "end": 69.207
+    },
+    {
+     "id": "w138",
+     "text": "jangan",
+     "start": 69.265,
+     "end": 69.474
+    },
+    {
+     "id": "w139",
+     "text": "dipakai",
+     "start": 69.509,
+     "end": 69.88
+    },
+    {
+     "id": "w140",
+     "text": "lagi.",
+     "start": 69.938,
+     "end": 70.426
+    },
+    {
+     "id": "w141",
+     "text": "Sebelum",
+     "start": 70.855,
+     "end": 71.204
+    },
+    {
+     "id": "w142",
+     "text": "pulang,",
+     "start": 71.25,
+     "end": 71.889
+    },
+    {
+     "id": "w143",
+     "text": "periksa",
+     "start": 72.016,
+     "end": 72.411
+    },
+    {
+     "id": "w144",
+     "text": "nama,",
+     "start": 72.504,
+     "end": 73.073
+    },
+    {
+     "id": "w145",
+     "text": "nomor",
+     "start": 73.166,
+     "end": 73.444
+    },
+    {
+     "id": "w146",
+     "text": "induk,",
+     "start": 73.537,
+     "end": 74.141
+    },
+    {
+     "id": "w147",
+     "text": "dan",
+     "start": 74.292,
+     "end": 74.454
+    },
+    {
+     "id": "w148",
+     "text": "alamat",
+     "start": 74.547,
+     "end": 75.012
+    },
+    {
+     "id": "w149",
+     "text": "di",
+     "start": 75.128,
+     "end": 75.279
+    },
+    {
+     "id": "w150",
+     "text": "kartu",
+     "start": 75.337,
+     "end": 75.685
+    },
+    {
+     "id": "w151",
+     "text": "baru.",
+     "start": 75.755,
+     "end": 76.475
+    },
+    {
+     "id": "w152",
+     "text": "Satu",
+     "start": 76.985,
+     "end": 77.322
+    },
+    {
+     "id": "w153",
+     "text": "huruf",
+     "start": 77.369,
+     "end": 77.647
+    },
+    {
+     "id": "w154",
+     "text": "yang",
+     "start": 77.717,
+     "end": 77.856
+    },
+    {
+     "id": "w155",
+     "text": "salah",
+     "start": 77.914,
+     "end": 78.251
+    },
+    {
+     "id": "w156",
+     "text": "bisa",
+     "start": 78.297,
+     "end": 78.53
+    },
+    {
+     "id": "w157",
+     "text": "merepotkan",
+     "start": 78.576,
+     "end": 79.238
+    },
+    {
+     "id": "w158",
+     "text": "urusan",
+     "start": 79.319,
+     "end": 79.725
+    },
+    {
+     "id": "w159",
+     "text": "Anda",
+     "start": 79.807,
+     "end": 80.085
+    },
+    {
+     "id": "w160",
+     "text": "nanti.",
+     "start": 80.155,
+     "end": 80.759
+    },
+    {
+     "id": "w161",
+     "text": "Sudah",
+     "start": 81.002,
+     "end": 81.386
+    },
+    {
+     "id": "w162",
+     "text": "tinggal",
+     "start": 81.432,
+     "end": 81.908
+    },
+    {
+     "id": "w163",
+     "text": "di",
+     "start": 81.978,
+     "end": 82.047
+    },
+    {
+     "id": "w164",
+     "text": "kota",
+     "start": 82.094,
+     "end": 82.314
+    },
+    {
+     "id": "w165",
+     "text": "baru,",
+     "start": 82.372,
+     "end": 82.976
+    },
+    {
+     "id": "w166",
+     "text": "tapi",
+     "start": 83.092,
+     "end": 83.406
+    },
+    {
+     "id": "w167",
+     "text": "belum",
+     "start": 83.464,
+     "end": 83.696
+    },
+    {
+     "id": "w168",
+     "text": "sempat",
+     "start": 83.754,
+     "end": 84.079
+    },
+    {
+     "id": "w169",
+     "text": "mengurus",
+     "start": 84.149,
+     "end": 84.52
+    },
+    {
+     "id": "w170",
+     "text": "surat",
+     "start": 84.543,
+     "end": 84.822
+    },
+    {
+     "id": "w171",
+     "text": "pindah?",
+     "start": 84.845,
+     "end": 85.414
+    },
+    {
+     "id": "w172",
+     "text": "Tenang.",
+     "start": 85.623,
+     "end": 86.18
+    },
+    {
+     "id": "w173",
+     "text": "Dukcapil",
+     "start": 86.564,
+     "end": 87.098
+    },
+    {
+     "id": "w174",
+     "text": "kota",
+     "start": 87.167,
+     "end": 87.4
+    },
+    {
+     "id": "w175",
+     "text": "baru",
+     "start": 87.458,
+     "end": 87.794
+    },
+    {
+     "id": "w176",
+     "text": "bisa",
+     "start": 87.841,
+     "end": 88.05
+    },
+    {
+     "id": "w177",
+     "text": "menghubungi",
+     "start": 88.096,
+     "end": 88.677
+    },
+    {
+     "id": "w178",
+     "text": "Dukcapil",
+     "start": 88.723,
+     "end": 89.234
+    },
+    {
+     "id": "w179",
+     "text": "kota",
+     "start": 89.315,
+     "end": 89.593
+    },
+    {
+     "id": "w180",
+     "text": "lama",
+     "start": 89.651,
+     "end": 89.907
+    },
+    {
+     "id": "w181",
+     "text": "untuk",
+     "start": 89.988,
+     "end": 90.278
+    },
+    {
+     "id": "w182",
+     "text": "Anda.",
+     "start": 90.371,
+     "end": 90.917
+    },
+    {
+     "id": "w183",
+     "text": "Kalau",
+     "start": 91.196,
+     "end": 91.463
+    },
+    {
+     "id": "w184",
+     "text": "ada",
+     "start": 91.532,
+     "end": 91.811
+    },
+    {
+     "id": "w185",
+     "text": "anak",
+     "start": 91.892,
+     "end": 92.252
+    },
+    {
+     "id": "w186",
+     "text": "di",
+     "start": 92.322,
+     "end": 92.38
+    },
+    {
+     "id": "w187",
+     "text": "bawah",
+     "start": 92.438,
+     "end": 92.693
+    },
+    {
+     "id": "w188",
+     "text": "tujuh",
+     "start": 92.751,
+     "end": 93.088
+    },
+    {
+     "id": "w189",
+     "text": "belas",
+     "start": 93.134,
+     "end": 93.402
+    },
+    {
+     "id": "w190",
+     "text": "tahun",
+     "start": 93.494,
+     "end": 93.901
+    },
+    {
+     "id": "w191",
+     "text": "yang",
+     "start": 94.145,
+     "end": 94.377
+    },
+    {
+     "id": "w192",
+     "text": "tidak",
+     "start": 94.435,
+     "end": 94.76
+    },
+    {
+     "id": "w193",
+     "text": "ikut",
+     "start": 94.795,
+     "end": 95.085
+    },
+    {
+     "id": "w194",
+     "text": "pindah,",
+     "start": 95.143,
+     "end": 95.828
+    },
+    {
+     "id": "w195",
+     "text": "siapkan",
+     "start": 96.037,
+     "end": 96.699
+    },
+    {
+     "id": "w196",
+     "text": "anggota",
+     "start": 96.78,
+     "end": 97.256
+    },
+    {
+     "id": "w197",
+     "text": "keluarga",
+     "start": 97.326,
+     "end": 97.86
+    },
+    {
+     "id": "w198",
+     "text": "dewasa",
+     "start": 97.929,
+     "end": 98.638
+    },
+    {
+     "id": "w199",
+     "text": "yang",
+     "start": 98.847,
+     "end": 99.056
+    },
+    {
+     "id": "w200",
+     "text": "bersedia",
+     "start": 99.102,
+     "end": 99.775
+    },
+    {
+     "id": "w201",
+     "text": "menjadi",
+     "start": 99.833,
+     "end": 100.251
+    },
+    {
+     "id": "w202",
+     "text": "kepala",
+     "start": 100.298,
+     "end": 100.716
+    },
+    {
+     "id": "w203",
+     "text": "keluarga",
+     "start": 100.785,
+     "end": 101.285
+    },
+    {
+     "id": "w204",
+     "text": "mereka.",
+     "start": 101.331,
+     "end": 102.063
+    },
+    {
+     "id": "w205",
+     "text": "Satu",
+     "start": 102.388,
+     "end": 102.678
+    },
+    {
+     "id": "w206",
+     "text": "hal",
+     "start": 102.736,
+     "end": 102.852
+    },
+    {
+     "id": "w207",
+     "text": "penting:",
+     "start": 102.91,
+     "end": 103.479
+    },
+    {
+     "id": "w208",
+     "text": "aturan",
+     "start": 103.758,
+     "end": 104.199
+    },
+    {
+     "id": "w209",
+     "text": "tiap",
+     "start": 104.268,
+     "end": 104.535
+    },
+    {
+     "id": "w210",
+     "text": "daerah",
+     "start": 104.617,
+     "end": 105.139
+    },
+    {
+     "id": "w211",
+     "text": "bisa",
+     "start": 105.197,
+     "end": 105.441
+    },
+    {
+     "id": "w212",
+     "text": "sedikit",
+     "start": 105.487,
+     "end": 105.859
+    },
+    {
+     "id": "w213",
+     "text": "berbeda,",
+     "start": 105.917,
+     "end": 106.66
+    },
+    {
+     "id": "w214",
+     "text": "dan",
+     "start": 106.834,
+     "end": 106.985
+    },
+    {
+     "id": "w215",
+     "text": "banyak",
+     "start": 107.067,
+     "end": 107.45
+    },
+    {
+     "id": "w216",
+     "text": "Dukcapil",
+     "start": 107.508,
+     "end": 108.251
+    },
+    {
+     "id": "w217",
+     "text": "sudah",
+     "start": 108.46,
+     "end": 108.785
+    },
+    {
+     "id": "w218",
+     "text": "menyediakan",
+     "start": 108.843,
+     "end": 109.737
+    },
+    {
+     "id": "w219",
+     "text": "layanan",
+     "start": 109.981,
+     "end": 110.55
+    },
+    {
+     "id": "w220",
+     "text": "online.",
+     "start": 110.631,
+     "end": 111.49
+    },
+    {
+     "id": "w221",
+     "text": "Cek",
+     "start": 111.769,
+     "end": 112.047
+    },
+    {
+     "id": "w222",
+     "text": "situs",
+     "start": 112.117,
+     "end": 112.477
+    },
+    {
+     "id": "w223",
+     "text": "resminya",
+     "start": 112.593,
+     "end": 113.046
+    },
+    {
+     "id": "w224",
+     "text": "dulu,",
+     "start": 113.104,
+     "end": 113.592
+    },
+    {
+     "id": "w225",
+     "text": "supaya",
+     "start": 113.835,
+     "end": 114.277
+    },
+    {
+     "id": "w226",
+     "text": "Anda",
+     "start": 114.323,
+     "end": 114.741
+    },
+    {
+     "id": "w227",
+     "text": "tidak",
+     "start": 114.799,
+     "end": 115.101
+    },
+    {
+     "id": "w228",
+     "text": "antre",
+     "start": 115.124,
+     "end": 115.693
+    },
+    {
+     "id": "w229",
+     "text": "sia-sia.",
+     "start": 115.774,
+     "end": 116.645
+    },
+    {
+     "id": "w230",
+     "text": "Malam",
+     "start": 117.156,
+     "end": 117.458
+    },
+    {
+     "id": "w231",
+     "text": "ini,",
+     "start": 117.551,
+     "end": 118.038
+    },
+    {
+     "id": "w232",
+     "text": "cari",
+     "start": 118.212,
+     "end": 118.503
+    },
+    {
+     "id": "w233",
+     "text": "situs",
+     "start": 118.561,
+     "end": 118.886
+    },
+    {
+     "id": "w234",
+     "text": "Dukcapil",
+     "start": 118.955,
+     "end": 119.524
+    },
+    {
+     "id": "w235",
+     "text": "kota",
+     "start": 119.606,
+     "end": 119.861
+    },
+    {
+     "id": "w236",
+     "text": "Anda,",
+     "start": 119.942,
+     "end": 120.511
+    },
+    {
+     "id": "w237",
+     "text": "dan",
+     "start": 120.662,
+     "end": 120.825
+    },
+    {
+     "id": "w238",
+     "text": "lihat",
+     "start": 120.894,
+     "end": 121.231
+    },
+    {
+     "id": "w239",
+     "text": "apakah",
+     "start": 121.301,
+     "end": 121.637
+    },
+    {
+     "id": "w240",
+     "text": "pindah",
+     "start": 121.66,
+     "end": 121.962
+    },
+    {
+     "id": "w241",
+     "text": "domisili",
+     "start": 121.997,
+     "end": 122.496
+    },
+    {
+     "id": "w242",
+     "text": "bisa",
+     "start": 122.554,
+     "end": 122.775
+    },
+    {
+     "id": "w243",
+     "text": "diurus",
+     "start": 122.833,
+     "end": 123.228
+    },
+    {
+     "id": "w244",
+     "text": "online.",
+     "start": 123.321,
+     "end": 124.017
+    }
+   ]
+  }
+ ]
+}
