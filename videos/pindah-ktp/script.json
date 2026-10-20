@@ -1,0 +1,21 @@
+{
+  "slug": "pindah-ktp",
+  "mode": "tutorial",
+  "voiceId": "pNInz6obpgDQGcFmaJgB",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "seed": 42,
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "speed": 1.0,
+    "use_speaker_boost": true
+  },
+  "scenes": [
+    {
+      "id": "vo",
+      "text": "KTP Anda masih beralamat di kota lama, padahal Anda sudah tinggal di kota baru. Mau buka rekening, urus BPJS, atau daftarkan sekolah anak, semuanya jadi tertahan. Kabar baiknya, pindah domisili itu gratis, dan sekarang umumnya tidak perlu lagi surat pengantar RT atau RW. Cukup empat langkah. Langkah satu. Siapkan dokumen. Anda butuh KTP elektronik asli, fotokopi Kartu Keluarga, dan formulir F satu nol tiga, yang tersedia di kantor Dukcapil. Langkah dua. Datang ke Dukcapil di kota lama Anda. Minta Surat Keterangan Pindah, atau S K P W N I. Surat inilah tiket Anda untuk pindah. Langkah tiga. Bawa surat itu ke Dukcapil di kota baru. Kalau Anda menumpang atau mengontrak, bawa juga surat pernyataan dari pemilik rumah bahwa ia tidak keberatan. Langkah empat. Terima Kartu Keluarga baru dan KTP elektronik baru dengan alamat baru. KTP lama dibatalkan, jadi jangan dipakai lagi. Sebelum pulang, periksa nama, nomor induk, dan alamat di kartu baru. Satu huruf yang salah bisa merepotkan urusan Anda nanti. Sudah tinggal di kota baru, tapi belum sempat mengurus surat pindah? Tenang. Dukcapil kota baru bisa menghubungi Dukcapil kota lama untuk Anda. Kalau ada anak di bawah tujuh belas tahun yang tidak ikut pindah, siapkan anggota keluarga dewasa yang bersedia menjadi kepala keluarga mereka. Satu hal penting: aturan tiap daerah bisa sedikit berbeda, dan banyak Dukcapil sudah menyediakan layanan online. Cek situs resminya dulu, supaya Anda tidak antre sia-sia. Malam ini, cari situs Dukcapil kota Anda, dan lihat apakah pindah domisili bisa diurus online."
+    }
+  ]
+}

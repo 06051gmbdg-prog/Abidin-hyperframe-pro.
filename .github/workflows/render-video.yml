@@ -1,0 +1,72 @@
+# Records the voice-over (ElevenLabs, with word timestamps), builds the composition, lints, renders the MP4,
+# and publishes it to the branch renders-<name>. Run from the Actions tab (works from a phone browser).
+# Needs the repo secret ELEVENLABS_API_KEY.
+name: render-video
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Folder name inside videos/"
+        default: pindah-ktp
+      voice_id:
+        description: "ElevenLabs voice id (empty = voiceId from script.json)"
+        default: ""
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      DIR: videos/${{ inputs.video }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Check secret
+        env:
+          KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::error::Secret ELEVENLABS_API_KEY is missing (Settings > Secrets and variables > Actions)"; exit 1; fi
+      - name: Voice-over with word timestamps
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: node plugins/hyperframe-pro/scripts/tts.mjs "$DIR/script.json" "$DIR/assets/vo" ${{ inputs.voice_id }}
+      - name: Build composition
+        run: node "$DIR/build.mjs" "$DIR"
+      - name: Lint (retention checks)
+        run: node plugins/hyperframe-pro/scripts/lint.mjs "$DIR" "$DIR/build.mjs"
+      - name: Composition checks
+        working-directory: ${{ env.DIR }}
+        run: npx -y hyperframes check
+        continue-on-error: true
+      - name: Rebuild (check rewrites index.html) and render MP4
+        working-directory: ${{ env.DIR }}
+        run: |
+          node build.mjs .
+          npx -y hyperframes render
+      - name: Contact sheet (1 frame per second)
+        working-directory: ${{ env.DIR }}
+        run: |
+          mp4=$(find . -name '*.mp4' -not -path './assets/*' | head -n1)
+          echo "Rendered: $mp4"
+          ffprobe -v error -show_entries format=duration -of csv=p=0 "$mp4"
+          ffmpeg -nostdin -loglevel error -y -i "$mp4" -vf "fps=1/3,scale=180:-2,tile=8x5" -frames:v 1 contact-sheet.png
+          mkdir -p /tmp/out && cp "$mp4" /tmp/out/video.mp4 && cp contact-sheet.png /tmp/out/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.video }}-mp4
+          path: /tmp/out/*
+          if-no-files-found: error
+      - name: Publish to branch renders-${{ inputs.video }}
+        run: |
+          cd /tmp/out
+          git init -q -b renders-${{ inputs.video }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Render of ${{ inputs.video }} (run ${{ github.run_number }})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" renders-${{ inputs.video }}
