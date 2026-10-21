@@ -60,16 +60,16 @@ jobs:
         run: |
           if [ -z "$PROMPT" ]; then echo "::error::prompt is empty"; exit 1; fi
           set -o pipefail
-          node plugins/hyperframe-pro/scripts/gemini.mjs image --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.png" --size "${{ inputs.size }}" --aspect 9:16 2>&1 | tee /tmp/g.log || { echo "::error title=Gemini error::$(tail -n 6 /tmp/g.log | tr '\n' ' ' | cut -c1-1200)"; exit 1; }
+          node plugins/hyperframe-pro/scripts/gemini.mjs image --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.jpg" --size "${{ inputs.size }}" --aspect 9:16 2>&1 | tee /tmp/g.log || { echo "::error title=Gemini error::$(tail -n 6 /tmp/g.log | tr '\n' ' ' | cut -c1-1200)"; exit 1; }
       - name: Generate ONE video clip
         if: ${{ inputs.action == 'video' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PROMPT: ${{ inputs.prompt }}
         run: |
-          test -f "/tmp/footage/${{ inputs.name }}.png" || { echo "::error::${{ inputs.name }}.png not found in branch footage - generate the image first (action=image, same name)"; exit 1; }
+          test -f "/tmp/footage/${{ inputs.name }}.jpg" || { echo "::error::${{ inputs.name }}.jpg not found in branch footage - generate the image first (action=image, same name)"; exit 1; }
           set -o pipefail
-          node plugins/hyperframe-pro/scripts/gemini.mjs video --image "/tmp/footage/${{ inputs.name }}.png" --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.mp4" --resolution 720p --aspect 9:16 --trim "${{ inputs.trim }}" 2>&1 | tee /tmp/g.log || { echo "::error title=Gemini error::$(tail -n 6 /tmp/g.log | tr '\n' ' ' | cut -c1-1200)"; exit 1; }
+          node plugins/hyperframe-pro/scripts/gemini.mjs video --image "/tmp/footage/${{ inputs.name }}.jpg" --prompt "$PROMPT" --out "/tmp/footage/${{ inputs.name }}.mp4" --resolution 720p --aspect 9:16 --trim "${{ inputs.trim }}" 2>&1 | tee /tmp/g.log || { echo "::error title=Gemini error::$(tail -n 6 /tmp/g.log | tr '\n' ' ' | cut -c1-1200)"; exit 1; }
           rm -f "/tmp/footage/${{ inputs.name }}.full.mp4"
       - name: Save to branch footage
         if: ${{ inputs.action != 'probe' }}

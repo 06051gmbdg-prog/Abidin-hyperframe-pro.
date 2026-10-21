@@ -2,8 +2,8 @@
 // gemini.mjs — generated footage through the Gemini API (alternative to fal.mjs).
 //
 //   node gemini.mjs probe                                                  # checks the key, costs nothing
-//   node gemini.mjs image --prompt "..." --out frame.png [--size 1K|2K] [--aspect 9:16]
-//   node gemini.mjs video --image first.png --prompt "..." --out clip.mp4 [--resolution 720p] [--aspect 9:16] [--trim 4]
+//   node gemini.mjs image --prompt "..." --out frame.jpg [--size 1K|2K] [--aspect 9:16]
+//   node gemini.mjs video --image first.jpg --prompt "..." --out clip.mp4 [--resolution 720p] [--aspect 9:16] [--trim 4]
 //
 // Models (Interactions API, https://ai.google.dev/gemini-api/docs/image-generation and /omni):
 //   gemini-nano-banana-2.1   text -> image
@@ -85,7 +85,7 @@ if (cmd === "probe") {
   if (!a.prompt || !a.out) throw new Error("image needs --prompt and --out");
   const j = await interact({
     model: "gemini-nano-banana-2.1", input: a.prompt,
-    response_format: { type: "image", mime_type: "image/png", aspect_ratio: a.aspect || "9:16", image_size: a.size || "1K" },
+    response_format: { type: "image", mime_type: "image/jpeg", aspect_ratio: a.aspect || "9:16", image_size: a.size || "1K" },
   }, "nano-banana-2.1");
   const im = pick(j, "image");
   if (!im?.data) throw new Error(`no image in response: ${brief(JSON.stringify(j))}`);
