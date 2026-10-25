@@ -17,10 +17,19 @@ jobs:
   render:
     runs-on: ubuntu-latest
     timeout-minutes: 40
-    env:
-      DIR: videos/${{ inputs.video }}
     steps:
       - uses: actions/checkout@v4
+      - name: Resolve video folder (case-insensitive)
+        env:
+          INPUT_VIDEO: ${{ inputs.video }}
+        run: |
+          V=$(printf '%s' "$INPUT_VIDEO" | tr 'A-Z' 'a-z' | tr -d ' ')
+          if [ ! -f "videos/$V/script.json" ]; then
+            echo "::error::videos/$V/script.json not found. Folders available: $(ls videos | tr '\n' ' ')"
+            exit 1
+          fi
+          echo "VIDEO=$V" >> "$GITHUB_ENV"
+          echo "DIR=videos/$V" >> "$GITHUB_ENV"
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -59,15 +68,15 @@ jobs:
           cp assets/vo/*.wav assets/vo/*.words.json assets/vo/audio_meta.json /tmp/out/vo/
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ inputs.video }}-mp4
+          name: ${{ env.VIDEO }}-mp4
           path: /tmp/out/*
           if-no-files-found: error
-      - name: Publish to branch renders-${{ inputs.video }}
+      - name: Publish to branch renders-${{ env.VIDEO }}
         run: |
           cd /tmp/out
-          git init -q -b renders-${{ inputs.video }}
+          git init -q -b renders-${{ env.VIDEO }}
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -qm "Render of ${{ inputs.video }} (run ${{ github.run_number }})"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" renders-${{ inputs.video }}
+          git commit -qm "Render of ${{ env.VIDEO }} (run ${{ github.run_number }})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" renders-${{ env.VIDEO }}
