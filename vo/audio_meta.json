@@ -1,0 +1,1798 @@
+{
+ "voiceId": "pNInz6obpgDQGcFmaJgB",
+ "modelId": "eleven_multilingual_v2",
+ "scenes": [
+  {
+   "id": "vo",
+   "text": "Notifikasi penyimpanan penuh muncul lagi, tepat saat Anda mau memotret. Tenang, Anda tidak perlu menghapus foto kenangan. Ada lima langkah, dan tiap langkah cuma beberapa menit. Langkah satu. Cari tahu siapa pelakunya. Di Android, buka Pengaturan, lalu Penyimpanan. Di iPhone, buka Pengaturan, Umum, lalu Penyimpanan iPhone. Anda akan melihat daftar aplikasi beserta ukurannya. Langkah dua. Bersihkan WhatsApp. Buka Pengaturan, Penyimpanan dan data, lalu Kelola penyimpanan. Biasanya ada dua kelompok: media yang sering diteruskan, dan file yang lebih besar dari lima megabita. Pilih yang tidak perlu, lalu ketuk ikon tempat sampah. Langkah tiga. Kosongkan cache aplikasi. Di Android, buka Pengaturan, Aplikasi, pilih aplikasinya, lalu Penyimpanan dan Hapus cache. iPhone tidak punya tombol cache. Pilih aplikasinya di daftar penyimpanan, lalu ketuk Offload App, yang membuang aplikasinya tapi menyimpan datanya. Langkah empat. Cadangkan foto dan video dulu. Pastikan semuanya sudah tercadang, baru hapus dari ponsel. Di Google Foto, ketuk foto profil, lalu cari opsi mengosongkan ruang di perangkat. Langkah lima. Hapus aplikasi yang jarang dipakai. Di Play Store, ketuk foto profil, buka Kelola aplikasi dan perangkat, lalu urutkan dari yang paling jarang digunakan. Bonus untuk Android: pasang aplikasi Files dari Google. Buka tab Bersihkan, lalu lihat kartu saran seperti file sampah dan file duplikat. Satu hal penting: nama menu bisa berbeda di tiap merek ponsel, jadi cari kata penyimpanan atau storage di kolom pencarian Pengaturan. Kalau ruang masih kurang, pindahkan file besar ke flashdisk. Lexar JumpDrive Dual Drive D400 punya dua colokan: USB C untuk ponsel Android, dan USB A untuk laptop. Kapasitasnya mulai tiga puluh dua giga sampai dua ratus lima puluh enam giga, dengan kecepatan baca hingga seratus tiga puluh megabita per detik. Bentuknya ringkas, muat di saku. Link produknya ada di keterangan video. Malam ini, buka pengaturan penyimpanan ponsel Anda, dan hapus satu hal yang paling besar.",
+   "wav": "vo.wav",
+   "duration": 156.085,
+   "speechStart": 0.058,
+   "speechEnd": 155.899,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Notifikasi",
+     "start": 0.058,
+     "end": 0.639
+    },
+    {
+     "id": "w1",
+     "text": "penyimpanan",
+     "start": 0.685,
+     "end": 1.219
+    },
+    {
+     "id": "w2",
+     "text": "penuh",
+     "start": 1.277,
+     "end": 1.591
+    },
+    {
+     "id": "w3",
+     "text": "muncul",
+     "start": 1.637,
+     "end": 1.985
+    },
+    {
+     "id": "w4",
+     "text": "lagi,",
+     "start": 2.032,
+     "end": 2.543
+    },
+    {
+     "id": "w5",
+     "text": "tepat",
+     "start": 2.659,
+     "end": 3.065
+    },
+    {
+     "id": "w6",
+     "text": "saat",
+     "start": 3.135,
+     "end": 3.402
+    },
+    {
+     "id": "w7",
+     "text": "Anda",
+     "start": 3.495,
+     "end": 3.75
+    },
+    {
+     "id": "w8",
+     "text": "mau",
+     "start": 3.82,
+     "end": 4.087
+    },
+    {
+     "id": "w9",
+     "text": "memotret.",
+     "start": 4.145,
+     "end": 4.888
+    },
+    {
+     "id": "w10",
+     "text": "Tenang,",
+     "start": 5.166,
+     "end": 5.956
+    },
+    {
+     "id": "w11",
+     "text": "Anda",
+     "start": 6.2,
+     "end": 6.478
+    },
+    {
+     "id": "w12",
+     "text": "tidak",
+     "start": 6.525,
+     "end": 6.769
+    },
+    {
+     "id": "w13",
+     "text": "perlu",
+     "start": 6.803,
+     "end": 7.07
+    },
+    {
+     "id": "w14",
+     "text": "menghapus",
+     "start": 7.117,
+     "end": 7.663
+    },
+    {
+     "id": "w15",
+     "text": "foto",
+     "start": 7.732,
+     "end": 8.011
+    },
+    {
+     "id": "w16",
+     "text": "kenangan.",
+     "start": 8.069,
+     "end": 8.812
+    },
+    {
+     "id": "w17",
+     "text": "Ada",
+     "start": 9.091,
+     "end": 9.334
+    },
+    {
+     "id": "w18",
+     "text": "lima",
+     "start": 9.381,
+     "end": 9.601
+    },
+    {
+     "id": "w19",
+     "text": "langkah,",
+     "start": 9.671,
+     "end": 10.391
+    },
+    {
+     "id": "w20",
+     "text": "dan",
+     "start": 10.565,
+     "end": 10.716
+    },
+    {
+     "id": "w21",
+     "text": "tiap",
+     "start": 10.786,
+     "end": 11.041
+    },
+    {
+     "id": "w22",
+     "text": "langkah",
+     "start": 11.111,
+     "end": 11.459
+    },
+    {
+     "id": "w23",
+     "text": "cuma",
+     "start": 11.505,
+     "end": 11.738
+    },
+    {
+     "id": "w24",
+     "text": "beberapa",
+     "start": 11.807,
+     "end": 12.214
+    },
+    {
+     "id": "w25",
+     "text": "menit.",
+     "start": 12.249,
+     "end": 12.725
+    },
+    {
+     "id": "w26",
+     "text": "Langkah",
+     "start": 12.968,
+     "end": 13.293
+    },
+    {
+     "id": "w27",
+     "text": "satu.",
+     "start": 13.328,
+     "end": 13.944
+    },
+    {
+     "id": "w28",
+     "text": "Cari",
+     "start": 14.118,
+     "end": 14.408
+    },
+    {
+     "id": "w29",
+     "text": "tahu",
+     "start": 14.454,
+     "end": 14.663
+    },
+    {
+     "id": "w30",
+     "text": "siapa",
+     "start": 14.721,
+     "end": 15.081
+    },
+    {
+     "id": "w31",
+     "text": "pelakunya.",
+     "start": 15.128,
+     "end": 15.871
+    },
+    {
+     "id": "w32",
+     "text": "Di",
+     "start": 16.254,
+     "end": 16.382
+    },
+    {
+     "id": "w33",
+     "text": "Android,",
+     "start": 16.452,
+     "end": 17.241
+    },
+    {
+     "id": "w34",
+     "text": "buka",
+     "start": 17.415,
+     "end": 17.775
+    },
+    {
+     "id": "w35",
+     "text": "Pengaturan,",
+     "start": 17.845,
+     "end": 18.855
+    },
+    {
+     "id": "w36",
+     "text": "lalu",
+     "start": 19.029,
+     "end": 19.273
+    },
+    {
+     "id": "w37",
+     "text": "Penyimpanan.",
+     "start": 19.308,
+     "end": 20.167
+    },
+    {
+     "id": "w38",
+     "text": "Di",
+     "start": 20.364,
+     "end": 20.515
+    },
+    {
+     "id": "w39",
+     "text": "iPhone,",
+     "start": 20.596,
+     "end": 21.305
+    },
+    {
+     "id": "w40",
+     "text": "buka",
+     "start": 21.386,
+     "end": 21.699
+    },
+    {
+     "id": "w41",
+     "text": "Pengaturan,",
+     "start": 21.769,
+     "end": 22.582
+    },
+    {
+     "id": "w42",
+     "text": "Umum,",
+     "start": 22.675,
+     "end": 23.371
+    },
+    {
+     "id": "w43",
+     "text": "lalu",
+     "start": 23.569,
+     "end": 23.812
+    },
+    {
+     "id": "w44",
+     "text": "Penyimpanan",
+     "start": 23.87,
+     "end": 24.497
+    },
+    {
+     "id": "w45",
+     "text": "iPhone.",
+     "start": 24.602,
+     "end": 25.322
+    },
+    {
+     "id": "w46",
+     "text": "Anda",
+     "start": 25.728,
+     "end": 26.042
+    },
+    {
+     "id": "w47",
+     "text": "akan",
+     "start": 26.076,
+     "end": 26.274
+    },
+    {
+     "id": "w48",
+     "text": "melihat",
+     "start": 26.332,
+     "end": 26.715
+    },
+    {
+     "id": "w49",
+     "text": "daftar",
+     "start": 26.773,
+     "end": 27.168
+    },
+    {
+     "id": "w50",
+     "text": "aplikasi",
+     "start": 27.237,
+     "end": 27.946
+    },
+    {
+     "id": "w51",
+     "text": "beserta",
+     "start": 28.004,
+     "end": 28.491
+    },
+    {
+     "id": "w52",
+     "text": "ukurannya.",
+     "start": 28.584,
+     "end": 29.304
+    },
+    {
+     "id": "w53",
+     "text": "Langkah",
+     "start": 29.873,
+     "end": 30.221
+    },
+    {
+     "id": "w54",
+     "text": "dua.",
+     "start": 30.268,
+     "end": 30.616
+    },
+    {
+     "id": "w55",
+     "text": "Bersihkan",
+     "start": 31.034,
+     "end": 31.44
+    },
+    {
+     "id": "w56",
+     "text": "WhatsApp.",
+     "start": 31.498,
+     "end": 31.986
+    },
+    {
+     "id": "w57",
+     "text": "Buka",
+     "start": 32.404,
+     "end": 32.717
+    },
+    {
+     "id": "w58",
+     "text": "Pengaturan,",
+     "start": 32.764,
+     "end": 33.46
+    },
+    {
+     "id": "w59",
+     "text": "Penyimpanan",
+     "start": 33.518,
+     "end": 34.145
+    },
+    {
+     "id": "w60",
+     "text": "dan",
+     "start": 34.215,
+     "end": 34.343
+    },
+    {
+     "id": "w61",
+     "text": "data,",
+     "start": 34.401,
+     "end": 34.923
+    },
+    {
+     "id": "w62",
+     "text": "lalu",
+     "start": 35.086,
+     "end": 35.329
+    },
+    {
+     "id": "w63",
+     "text": "Kelola",
+     "start": 35.364,
+     "end": 35.782
+    },
+    {
+     "id": "w64",
+     "text": "penyimpanan.",
+     "start": 35.84,
+     "end": 36.664
+    },
+    {
+     "id": "w65",
+     "text": "Biasanya",
+     "start": 37.071,
+     "end": 37.663
+    },
+    {
+     "id": "w66",
+     "text": "ada",
+     "start": 37.709,
+     "end": 37.907
+    },
+    {
+     "id": "w67",
+     "text": "dua",
+     "start": 37.953,
+     "end": 38.209
+    },
+    {
+     "id": "w68",
+     "text": "kelompok:",
+     "start": 38.255,
+     "end": 38.94
+    },
+    {
+     "id": "w69",
+     "text": "media",
+     "start": 39.265,
+     "end": 39.695
+    },
+    {
+     "id": "w70",
+     "text": "yang",
+     "start": 39.776,
+     "end": 39.939
+    },
+    {
+     "id": "w71",
+     "text": "sering",
+     "start": 40.008,
+     "end": 40.264
+    },
+    {
+     "id": "w72",
+     "text": "diteruskan,",
+     "start": 40.31,
+     "end": 41.192
+    },
+    {
+     "id": "w73",
+     "text": "dan",
+     "start": 41.308,
+     "end": 41.506
+    },
+    {
+     "id": "w74",
+     "text": "file",
+     "start": 41.622,
+     "end": 42.063
+    },
+    {
+     "id": "w75",
+     "text": "yang",
+     "start": 42.121,
+     "end": 42.295
+    },
+    {
+     "id": "w76",
+     "text": "lebih",
+     "start": 42.353,
+     "end": 42.562
+    },
+    {
+     "id": "w77",
+     "text": "besar",
+     "start": 42.586,
+     "end": 43.12
+    },
+    {
+     "id": "w78",
+     "text": "dari",
+     "start": 43.236,
+     "end": 43.456
+    },
+    {
+     "id": "w79",
+     "text": "lima",
+     "start": 43.549,
+     "end": 43.921
+    },
+    {
+     "id": "w80",
+     "text": "megabita.",
+     "start": 43.99,
+     "end": 44.931
+    },
+    {
+     "id": "w81",
+     "text": "Pilih",
+     "start": 45.256,
+     "end": 45.639
+    },
+    {
+     "id": "w82",
+     "text": "yang",
+     "start": 45.697,
+     "end": 45.86
+    },
+    {
+     "id": "w83",
+     "text": "tidak",
+     "start": 45.918,
+     "end": 46.173
+    },
+    {
+     "id": "w84",
+     "text": "perlu,",
+     "start": 46.208,
+     "end": 46.626
+    },
+    {
+     "id": "w85",
+     "text": "lalu",
+     "start": 46.696,
+     "end": 46.963
+    },
+    {
+     "id": "w86",
+     "text": "ketuk",
+     "start": 47.009,
+     "end": 47.357
+    },
+    {
+     "id": "w87",
+     "text": "ikon",
+     "start": 47.439,
+     "end": 47.729
+    },
+    {
+     "id": "w88",
+     "text": "tempat",
+     "start": 47.787,
+     "end": 48.077
+    },
+    {
+     "id": "w89",
+     "text": "sampah.",
+     "start": 48.112,
+     "end": 48.623
+    },
+    {
+     "id": "w90",
+     "text": "Langkah",
+     "start": 48.832,
+     "end": 49.168
+    },
+    {
+     "id": "w91",
+     "text": "tiga.",
+     "start": 49.203,
+     "end": 49.714
+    },
+    {
+     "id": "w92",
+     "text": "Kosongkan",
+     "start": 49.888,
+     "end": 50.504
+    },
+    {
+     "id": "w93",
+     "text": "cache",
+     "start": 50.62,
+     "end": 50.898
+    },
+    {
+     "id": "w94",
+     "text": "aplikasi.",
+     "start": 50.956,
+     "end": 51.769
+    },
+    {
+     "id": "w95",
+     "text": "Di",
+     "start": 52.013,
+     "end": 52.164
+    },
+    {
+     "id": "w96",
+     "text": "Android,",
+     "start": 52.257,
+     "end": 53.011
+    },
+    {
+     "id": "w97",
+     "text": "buka",
+     "start": 53.185,
+     "end": 53.545
+    },
+    {
+     "id": "w98",
+     "text": "Pengaturan,",
+     "start": 53.603,
+     "end": 54.439
+    },
+    {
+     "id": "w99",
+     "text": "Aplikasi,",
+     "start": 54.532,
+     "end": 55.461
+    },
+    {
+     "id": "w100",
+     "text": "pilih",
+     "start": 55.577,
+     "end": 55.983
+    },
+    {
+     "id": "w101",
+     "text": "aplikasinya,",
+     "start": 56.03,
+     "end": 57.04
+    },
+    {
+     "id": "w102",
+     "text": "lalu",
+     "start": 57.156,
+     "end": 57.388
+    },
+    {
+     "id": "w103",
+     "text": "Penyimpanan",
+     "start": 57.446,
+     "end": 58.096
+    },
+    {
+     "id": "w104",
+     "text": "dan",
+     "start": 58.154,
+     "end": 58.305
+    },
+    {
+     "id": "w105",
+     "text": "Hapus",
+     "start": 58.387,
+     "end": 58.793
+    },
+    {
+     "id": "w106",
+     "text": "cache.",
+     "start": 58.874,
+     "end": 59.466
+    },
+    {
+     "id": "w107",
+     "text": "iPhone",
+     "start": 59.78,
+     "end": 60.233
+    },
+    {
+     "id": "w108",
+     "text": "tidak",
+     "start": 60.256,
+     "end": 60.558
+    },
+    {
+     "id": "w109",
+     "text": "punya",
+     "start": 60.581,
+     "end": 60.883
+    },
+    {
+     "id": "w110",
+     "text": "tombol",
+     "start": 60.952,
+     "end": 61.347
+    },
+    {
+     "id": "w111",
+     "text": "cache.",
+     "start": 61.405,
+     "end": 61.916
+    },
+    {
+     "id": "w112",
+     "text": "Pilih",
+     "start": 62.125,
+     "end": 62.485
+    },
+    {
+     "id": "w113",
+     "text": "aplikasinya",
+     "start": 62.531,
+     "end": 63.332
+    },
+    {
+     "id": "w114",
+     "text": "di",
+     "start": 63.391,
+     "end": 63.46
+    },
+    {
+     "id": "w115",
+     "text": "daftar",
+     "start": 63.518,
+     "end": 63.843
+    },
+    {
+     "id": "w116",
+     "text": "penyimpanan,",
+     "start": 63.901,
+     "end": 64.784
+    },
+    {
+     "id": "w117",
+     "text": "lalu",
+     "start": 64.911,
+     "end": 65.144
+    },
+    {
+     "id": "w118",
+     "text": "ketuk",
+     "start": 65.19,
+     "end": 65.457
+    },
+    {
+     "id": "w119",
+     "text": "Offload",
+     "start": 65.538,
+     "end": 65.887
+    },
+    {
+     "id": "w120",
+     "text": "App,",
+     "start": 65.98,
+     "end": 66.339
+    },
+    {
+     "id": "w121",
+     "text": "yang",
+     "start": 66.479,
+     "end": 66.676
+    },
+    {
+     "id": "w122",
+     "text": "membuang",
+     "start": 66.723,
+     "end": 67.222
+    },
+    {
+     "id": "w123",
+     "text": "aplikasinya",
+     "start": 67.28,
+     "end": 68.127
+    },
+    {
+     "id": "w124",
+     "text": "tapi",
+     "start": 68.267,
+     "end": 68.592
+    },
+    {
+     "id": "w125",
+     "text": "menyimpan",
+     "start": 68.65,
+     "end": 69.207
+    },
+    {
+     "id": "w126",
+     "text": "datanya.",
+     "start": 69.288,
+     "end": 70.043
+    },
+    {
+     "id": "w127",
+     "text": "Langkah",
+     "start": 70.542,
+     "end": 71.006
+    },
+    {
+     "id": "w128",
+     "text": "empat.",
+     "start": 71.018,
+     "end": 71.587
+    },
+    {
+     "id": "w129",
+     "text": "Cadangkan",
+     "start": 72.028,
+     "end": 72.713
+    },
+    {
+     "id": "w130",
+     "text": "foto",
+     "start": 72.783,
+     "end": 73.085
+    },
+    {
+     "id": "w131",
+     "text": "dan",
+     "start": 73.166,
+     "end": 73.305
+    },
+    {
+     "id": "w132",
+     "text": "video",
+     "start": 73.363,
+     "end": 73.839
+    },
+    {
+     "id": "w133",
+     "text": "dulu.",
+     "start": 73.897,
+     "end": 74.443
+    },
+    {
+     "id": "w134",
+     "text": "Pastikan",
+     "start": 74.524,
+     "end": 75.047
+    },
+    {
+     "id": "w135",
+     "text": "semuanya",
+     "start": 75.105,
+     "end": 75.546
+    },
+    {
+     "id": "w136",
+     "text": "sudah",
+     "start": 75.581,
+     "end": 75.859
+    },
+    {
+     "id": "w137",
+     "text": "tercadang,",
+     "start": 75.894,
+     "end": 76.753
+    },
+    {
+     "id": "w138",
+     "text": "baru",
+     "start": 76.927,
+     "end": 77.218
+    },
+    {
+     "id": "w139",
+     "text": "hapus",
+     "start": 77.276,
+     "end": 77.624
+    },
+    {
+     "id": "w140",
+     "text": "dari",
+     "start": 77.694,
+     "end": 77.914
+    },
+    {
+     "id": "w141",
+     "text": "ponsel.",
+     "start": 77.984,
+     "end": 78.762
+    },
+    {
+     "id": "w142",
+     "text": "Di",
+     "start": 79.273,
+     "end": 79.389
+    },
+    {
+     "id": "w143",
+     "text": "Google",
+     "start": 79.447,
+     "end": 79.749
+    },
+    {
+     "id": "w144",
+     "text": "Foto,",
+     "start": 79.784,
+     "end": 80.306
+    },
+    {
+     "id": "w145",
+     "text": "ketuk",
+     "start": 80.399,
+     "end": 80.724
+    },
+    {
+     "id": "w146",
+     "text": "foto",
+     "start": 80.782,
+     "end": 81.026
+    },
+    {
+     "id": "w147",
+     "text": "profil,",
+     "start": 81.072,
+     "end": 81.734
+    },
+    {
+     "id": "w148",
+     "text": "lalu",
+     "start": 81.85,
+     "end": 82.071
+    },
+    {
+     "id": "w149",
+     "text": "cari",
+     "start": 82.117,
+     "end": 82.373
+    },
+    {
+     "id": "w150",
+     "text": "opsi",
+     "start": 82.442,
+     "end": 82.79
+    },
+    {
+     "id": "w151",
+     "text": "mengosongkan",
+     "start": 82.86,
+     "end": 83.441
+    },
+    {
+     "id": "w152",
+     "text": "ruang",
+     "start": 83.499,
+     "end": 83.812
+    },
+    {
+     "id": "w153",
+     "text": "di",
+     "start": 83.859,
+     "end": 83.917
+    },
+    {
+     "id": "w154",
+     "text": "perangkat.",
+     "start": 83.963,
+     "end": 84.695
+    },
+    {
+     "id": "w155",
+     "text": "Langkah",
+     "start": 84.845,
+     "end": 85.194
+    },
+    {
+     "id": "w156",
+     "text": "lima.",
+     "start": 85.229,
+     "end": 85.774
+    },
+    {
+     "id": "w157",
+     "text": "Hapus",
+     "start": 86.157,
+     "end": 86.494
+    },
+    {
+     "id": "w158",
+     "text": "aplikasi",
+     "start": 86.564,
+     "end": 87.133
+    },
+    {
+     "id": "w159",
+     "text": "yang",
+     "start": 87.214,
+     "end": 87.388
+    },
+    {
+     "id": "w160",
+     "text": "jarang",
+     "start": 87.469,
+     "end": 87.794
+    },
+    {
+     "id": "w161",
+     "text": "dipakai.",
+     "start": 87.841,
+     "end": 88.561
+    },
+    {
+     "id": "w162",
+     "text": "Di",
+     "start": 88.804,
+     "end": 88.921
+    },
+    {
+     "id": "w163",
+     "text": "Play",
+     "start": 88.967,
+     "end": 89.176
+    },
+    {
+     "id": "w164",
+     "text": "Store,",
+     "start": 89.222,
+     "end": 89.803
+    },
+    {
+     "id": "w165",
+     "text": "ketuk",
+     "start": 89.919,
+     "end": 90.244
+    },
+    {
+     "id": "w166",
+     "text": "foto",
+     "start": 90.291,
+     "end": 90.558
+    },
+    {
+     "id": "w167",
+     "text": "profil,",
+     "start": 90.627,
+     "end": 91.324
+    },
+    {
+     "id": "w168",
+     "text": "buka",
+     "start": 91.405,
+     "end": 91.753
+    },
+    {
+     "id": "w169",
+     "text": "Kelola",
+     "start": 91.835,
+     "end": 92.16
+    },
+    {
+     "id": "w170",
+     "text": "aplikasi",
+     "start": 92.218,
+     "end": 92.949
+    },
+    {
+     "id": "w171",
+     "text": "dan",
+     "start": 93.042,
+     "end": 93.263
+    },
+    {
+     "id": "w172",
+     "text": "perangkat,",
+     "start": 93.356,
+     "end": 94.099
+    },
+    {
+     "id": "w173",
+     "text": "lalu",
+     "start": 94.273,
+     "end": 94.528
+    },
+    {
+     "id": "w174",
+     "text": "urutkan",
+     "start": 94.575,
+     "end": 95.097
+    },
+    {
+     "id": "w175",
+     "text": "dari",
+     "start": 95.178,
+     "end": 95.434
+    },
+    {
+     "id": "w176",
+     "text": "yang",
+     "start": 95.469,
+     "end": 95.631
+    },
+    {
+     "id": "w177",
+     "text": "paling",
+     "start": 95.712,
+     "end": 96.049
+    },
+    {
+     "id": "w178",
+     "text": "jarang",
+     "start": 96.119,
+     "end": 96.525
+    },
+    {
+     "id": "w179",
+     "text": "digunakan.",
+     "start": 96.595,
+     "end": 97.442
+    },
+    {
+     "id": "w180",
+     "text": "Bonus",
+     "start": 97.825,
+     "end": 98.22
+    },
+    {
+     "id": "w181",
+     "text": "untuk",
+     "start": 98.336,
+     "end": 98.592
+    },
+    {
+     "id": "w182",
+     "text": "Android:",
+     "start": 98.65,
+     "end": 99.335
+    },
+    {
+     "id": "w183",
+     "text": "pasang",
+     "start": 99.66,
+     "end": 100.031
+    },
+    {
+     "id": "w184",
+     "text": "aplikasi",
+     "start": 100.089,
+     "end": 100.542
+    },
+    {
+     "id": "w185",
+     "text": "Files",
+     "start": 100.612,
+     "end": 100.983
+    },
+    {
+     "id": "w186",
+     "text": "dari",
+     "start": 101.053,
+     "end": 101.239
+    },
+    {
+     "id": "w187",
+     "text": "Google.",
+     "start": 101.297,
+     "end": 101.889
+    },
+    {
+     "id": "w188",
+     "text": "Buka",
+     "start": 102.272,
+     "end": 102.551
+    },
+    {
+     "id": "w189",
+     "text": "tab",
+     "start": 102.632,
+     "end": 102.76
+    },
+    {
+     "id": "w190",
+     "text": "Bersihkan,",
+     "start": 102.841,
+     "end": 103.63
+    },
+    {
+     "id": "w191",
+     "text": "lalu",
+     "start": 103.781,
+     "end": 104.048
+    },
+    {
+     "id": "w192",
+     "text": "lihat",
+     "start": 104.095,
+     "end": 104.385
+    },
+    {
+     "id": "w193",
+     "text": "kartu",
+     "start": 104.455,
+     "end": 104.769
+    },
+    {
+     "id": "w194",
+     "text": "saran",
+     "start": 104.827,
+     "end": 105.233
+    },
+    {
+     "id": "w195",
+     "text": "seperti",
+     "start": 105.314,
+     "end": 105.732
+    },
+    {
+     "id": "w196",
+     "text": "file",
+     "start": 105.825,
+     "end": 106.127
+    },
+    {
+     "id": "w197",
+     "text": "sampah",
+     "start": 106.15,
+     "end": 106.765
+    },
+    {
+     "id": "w198",
+     "text": "dan",
+     "start": 107.009,
+     "end": 107.207
+    },
+    {
+     "id": "w199",
+     "text": "file",
+     "start": 107.3,
+     "end": 107.625
+    },
+    {
+     "id": "w200",
+     "text": "duplikat.",
+     "start": 107.671,
+     "end": 108.402
+    },
+    {
+     "id": "w201",
+     "text": "Satu",
+     "start": 108.646,
+     "end": 108.948
+    },
+    {
+     "id": "w202",
+     "text": "hal",
+     "start": 109.006,
+     "end": 109.134
+    },
+    {
+     "id": "w203",
+     "text": "penting:",
+     "start": 109.204,
+     "end": 109.796
+    },
+    {
+     "id": "w204",
+     "text": "nama",
+     "start": 110.039,
+     "end": 110.33
+    },
+    {
+     "id": "w205",
+     "text": "menu",
+     "start": 110.388,
+     "end": 110.783
+    },
+    {
+     "id": "w206",
+     "text": "bisa",
+     "start": 110.864,
+     "end": 111.108
+    },
+    {
+     "id": "w207",
+     "text": "berbeda",
+     "start": 111.166,
+     "end": 111.618
+    },
+    {
+     "id": "w208",
+     "text": "di",
+     "start": 111.688,
+     "end": 111.769
+    },
+    {
+     "id": "w209",
+     "text": "tiap",
+     "start": 111.839,
+     "end": 112.106
+    },
+    {
+     "id": "w210",
+     "text": "merek",
+     "start": 112.176,
+     "end": 112.454
+    },
+    {
+     "id": "w211",
+     "text": "ponsel,",
+     "start": 112.536,
+     "end": 113.29
+    },
+    {
+     "id": "w212",
+     "text": "jadi",
+     "start": 113.569,
+     "end": 113.766
+    },
+    {
+     "id": "w213",
+     "text": "cari",
+     "start": 113.824,
+     "end": 114.045
+    },
+    {
+     "id": "w214",
+     "text": "kata",
+     "start": 114.103,
+     "end": 114.393
+    },
+    {
+     "id": "w215",
+     "text": "penyimpanan",
+     "start": 114.44,
+     "end": 115.229
+    },
+    {
+     "id": "w216",
+     "text": "atau",
+     "start": 115.31,
+     "end": 115.624
+    },
+    {
+     "id": "w217",
+     "text": "storage",
+     "start": 115.659,
+     "end": 116.135
+    },
+    {
+     "id": "w218",
+     "text": "di",
+     "start": 116.204,
+     "end": 116.309
+    },
+    {
+     "id": "w219",
+     "text": "kolom",
+     "start": 116.367,
+     "end": 116.704
+    },
+    {
+     "id": "w220",
+     "text": "pencarian",
+     "start": 116.762,
+     "end": 117.296
+    },
+    {
+     "id": "w221",
+     "text": "Pengaturan.",
+     "start": 117.365,
+     "end": 118.155
+    },
+    {
+     "id": "w222",
+     "text": "Kalau",
+     "start": 118.364,
+     "end": 118.689
+    },
+    {
+     "id": "w223",
+     "text": "ruang",
+     "start": 118.735,
+     "end": 119.06
+    },
+    {
+     "id": "w224",
+     "text": "masih",
+     "start": 119.118,
+     "end": 119.362
+    },
+    {
+     "id": "w225",
+     "text": "kurang,",
+     "start": 119.386,
+     "end": 120.105
+    },
+    {
+     "id": "w226",
+     "text": "pindahkan",
+     "start": 120.279,
+     "end": 120.93
+    },
+    {
+     "id": "w227",
+     "text": "file",
+     "start": 121.023,
+     "end": 121.336
+    },
+    {
+     "id": "w228",
+     "text": "besar",
+     "start": 121.383,
+     "end": 121.766
+    },
+    {
+     "id": "w229",
+     "text": "ke",
+     "start": 121.847,
+     "end": 121.951
+    },
+    {
+     "id": "w230",
+     "text": "flashdisk.",
+     "start": 122.033,
+     "end": 123.043
+    },
+    {
+     "id": "w231",
+     "text": "Lexar",
+     "start": 123.426,
+     "end": 123.914
+    },
+    {
+     "id": "w232",
+     "text": "JumpDrive",
+     "start": 124.041,
+     "end": 124.912
+    },
+    {
+     "id": "w233",
+     "text": "Dual",
+     "start": 124.947,
+     "end": 125.318
+    },
+    {
+     "id": "w234",
+     "text": "Drive",
+     "start": 125.4,
+     "end": 125.818
+    },
+    {
+     "id": "w235",
+     "text": "D400",
+     "start": 125.887,
+     "end": 126.712
+    },
+    {
+     "id": "w236",
+     "text": "punya",
+     "start": 127.037,
+     "end": 127.315
+    },
+    {
+     "id": "w237",
+     "text": "dua",
+     "start": 127.373,
+     "end": 127.594
+    },
+    {
+     "id": "w238",
+     "text": "colokan:",
+     "start": 127.64,
+     "end": 128.314
+    },
+    {
+     "id": "w239",
+     "text": "USB",
+     "start": 128.523,
+     "end": 128.894
+    },
+    {
+     "id": "w240",
+     "text": "C",
+     "start": 129.045,
+     "end": 129.161
+    },
+    {
+     "id": "w241",
+     "text": "untuk",
+     "start": 129.486,
+     "end": 129.835
+    },
+    {
+     "id": "w242",
+     "text": "ponsel",
+     "start": 129.881,
+     "end": 130.38
+    },
+    {
+     "id": "w243",
+     "text": "Android,",
+     "start": 130.462,
+     "end": 131.112
+    },
+    {
+     "id": "w244",
+     "text": "dan",
+     "start": 131.321,
+     "end": 131.483
+    },
+    {
+     "id": "w245",
+     "text": "USB",
+     "start": 131.599,
+     "end": 131.994
+    },
+    {
+     "id": "w246",
+     "text": "A",
+     "start": 132.168,
+     "end": 132.377
+    },
+    {
+     "id": "w247",
+     "text": "untuk",
+     "start": 132.493,
+     "end": 132.795
+    },
+    {
+     "id": "w248",
+     "text": "laptop.",
+     "start": 132.853,
+     "end": 133.445
+    },
+    {
+     "id": "w249",
+     "text": "Kapasitasnya",
+     "start": 133.77,
+     "end": 134.676
+    },
+    {
+     "id": "w250",
+     "text": "mulai",
+     "start": 134.711,
+     "end": 135.036
+    },
+    {
+     "id": "w251",
+     "text": "tiga",
+     "start": 135.082,
+     "end": 135.396
+    },
+    {
+     "id": "w252",
+     "text": "puluh",
+     "start": 135.442,
+     "end": 135.709
+    },
+    {
+     "id": "w253",
+     "text": "dua",
+     "start": 135.732,
+     "end": 135.93
+    },
+    {
+     "id": "w254",
+     "text": "giga",
+     "start": 135.988,
+     "end": 136.359
+    },
+    {
+     "id": "w255",
+     "text": "sampai",
+     "start": 136.429,
+     "end": 136.743
+    },
+    {
+     "id": "w256",
+     "text": "dua",
+     "start": 136.789,
+     "end": 137.01
+    },
+    {
+     "id": "w257",
+     "text": "ratus",
+     "start": 137.056,
+     "end": 137.346
+    },
+    {
+     "id": "w258",
+     "text": "lima",
+     "start": 137.416,
+     "end": 137.636
+    },
+    {
+     "id": "w259",
+     "text": "puluh",
+     "start": 137.683,
+     "end": 137.962
+    },
+    {
+     "id": "w260",
+     "text": "enam",
+     "start": 137.996,
+     "end": 138.287
+    },
+    {
+     "id": "w261",
+     "text": "giga,",
+     "start": 138.356,
+     "end": 138.89
+    },
+    {
+     "id": "w262",
+     "text": "dengan",
+     "start": 139.041,
+     "end": 139.285
+    },
+    {
+     "id": "w263",
+     "text": "kecepatan",
+     "start": 139.343,
+     "end": 139.866
+    },
+    {
+     "id": "w264",
+     "text": "baca",
+     "start": 139.935,
+     "end": 140.26
+    },
+    {
+     "id": "w265",
+     "text": "hingga",
+     "start": 140.318,
+     "end": 140.608
+    },
+    {
+     "id": "w266",
+     "text": "seratus",
+     "start": 140.666,
+     "end": 141.119
+    },
+    {
+     "id": "w267",
+     "text": "tiga",
+     "start": 141.177,
+     "end": 141.421
+    },
+    {
+     "id": "w268",
+     "text": "puluh",
+     "start": 141.467,
+     "end": 141.746
+    },
+    {
+     "id": "w269",
+     "text": "megabita",
+     "start": 141.793,
+     "end": 142.443
+    },
+    {
+     "id": "w270",
+     "text": "per",
+     "start": 142.501,
+     "end": 142.617
+    },
+    {
+     "id": "w271",
+     "text": "detik.",
+     "start": 142.71,
+     "end": 143.267
+    },
+    {
+     "id": "w272",
+     "text": "Bentuknya",
+     "start": 143.65,
+     "end": 144.254
+    },
+    {
+     "id": "w273",
+     "text": "ringkas,",
+     "start": 144.3,
+     "end": 144.985
+    },
+    {
+     "id": "w274",
+     "text": "muat",
+     "start": 145.229,
+     "end": 145.659
+    },
+    {
+     "id": "w275",
+     "text": "di",
+     "start": 145.728,
+     "end": 145.821
+    },
+    {
+     "id": "w276",
+     "text": "saku.",
+     "start": 145.868,
+     "end": 146.506
+    },
+    {
+     "id": "w277",
+     "text": "Link",
+     "start": 146.889,
+     "end": 147.122
+    },
+    {
+     "id": "w278",
+     "text": "produknya",
+     "start": 147.18,
+     "end": 147.772
+    },
+    {
+     "id": "w279",
+     "text": "ada",
+     "start": 147.853,
+     "end": 148.132
+    },
+    {
+     "id": "w280",
+     "text": "di",
+     "start": 148.19,
+     "end": 148.283
+    },
+    {
+     "id": "w281",
+     "text": "keterangan",
+     "start": 148.329,
+     "end": 148.875
+    },
+    {
+     "id": "w282",
+     "text": "video.",
+     "start": 148.944,
+     "end": 149.629
+    },
+    {
+     "id": "w283",
+     "text": "Malam",
+     "start": 150.07,
+     "end": 150.361
+    },
+    {
+     "id": "w284",
+     "text": "ini,",
+     "start": 150.442,
+     "end": 150.814
+    },
+    {
+     "id": "w285",
+     "text": "buka",
+     "start": 151.022,
+     "end": 151.359
+    },
+    {
+     "id": "w286",
+     "text": "pengaturan",
+     "start": 151.417,
+     "end": 151.963
+    },
+    {
+     "id": "w287",
+     "text": "penyimpanan",
+     "start": 152.021,
+     "end": 152.613
+    },
+    {
+     "id": "w288",
+     "text": "ponsel",
+     "start": 152.683,
+     "end": 153.112
+    },
+    {
+     "id": "w289",
+     "text": "Anda,",
+     "start": 153.182,
+     "end": 153.658
+    },
+    {
+     "id": "w290",
+     "text": "dan",
+     "start": 153.774,
+     "end": 153.925
+    },
+    {
+     "id": "w291",
+     "text": "hapus",
+     "start": 153.995,
+     "end": 154.273
+    },
+    {
+     "id": "w292",
+     "text": "satu",
+     "start": 154.308,
+     "end": 154.552
+    },
+    {
+     "id": "w293",
+     "text": "hal",
+     "start": 154.61,
+     "end": 154.773
+    },
+    {
+     "id": "w294",
+     "text": "yang",
+     "start": 154.831,
+     "end": 154.958
+    },
+    {
+     "id": "w295",
+     "text": "paling",
+     "start": 155.016,
+     "end": 155.26
+    },
+    {
+     "id": "w296",
+     "text": "besar.",
+     "start": 155.295,
+     "end": 155.899
+    }
+   ]
+  }
+ ]
+}
