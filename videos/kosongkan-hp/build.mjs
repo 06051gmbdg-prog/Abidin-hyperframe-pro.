@@ -14,6 +14,7 @@ export const PLAN = [
   { beat: "S5 jarang dipakai", from: "langkah", to: "bonus", hero: "slam", zones: "title 400 | head 720 | path 880 | note 1130" },
   { beat: "B6 bonus Files",  from: "bonus",   to: "penting", hero: "slam", zones: "type 440 | notes 760-1250" },
   { beat: "B7 beda merek",   from: "penting", to: "malam",   hero: "slam", zones: "type 440 | note 800-1200" },
+  { beat: "P8 produk",      from: "kalau",   to: "malam",   hero: "slam", zones: "type 440 | head 700 | card 900 | notes 1150-1350 | link 1450" },
   { beat: "END aksi",        from: "malam",   to: "end",     hero: "bar",  zones: "type 440 | bar 900 | note 1100-1300" },
 ];
 
@@ -49,7 +50,9 @@ c.l4 = TA("langkah", c.menyimpan); c.cadang = TA("cadangkan", c.l4); c.pastikan 
 c.l5 = TA("langkah", c.google); c.jarang = TA("jarang", c.l5); c.play = TA("play", c.jarang); c.urutkan = TA("urutkan", c.play);
 c.bonus = TA("bonus", c.urutkan); c.files = TA("files", c.bonus); c.bersihkan = TA("bersihkan", c.files); c.sampah2 = TA("sampah", c.bersihkan); c.duplikat = TA("duplikat", c.sampah2);
 c.penting = TA("penting", c.duplikat); c.beda = TA("berbeda", c.penting); c.cari = TA("cari", c.beda); c.cari2 = TA("pencarian", c.cari);
-c.malam = TA("malam", c.cari2); c.buka = TA("buka", c.malam); c.besar = TA("paling", c.buka);
+c.kalau = TA("kalau", c.cari2); c.flash = TA("flashdisk", c.kalau); c.lexar = TA("lexar", c.flash); c.colok = TA("colokan", c.lexar);
+c.kapasitas = TA("kapasitasnya", c.colok); c.baca = TA("baca", c.kapasitas); c.ringkas = TA("ringkas", c.baca); c.ket = TA("keterangan", c.ringkas);
+c.malam = TA("malam", c.ket); c.buka = TA("buka", c.malam); c.besar = TA("paling", c.buka);
 
 // ------------------------------------------------------------ scenes
 // kind: slam (big type) | note (medium) | path (menu card with OS badge) | bar (storage bar)
@@ -105,10 +108,19 @@ const scenes = [
     { id: "b6d", t: c.sampah2, y: 1190, size: 62, color: MUTED, html: "File sampah" },
     { id: "b6e", t: c.duplikat, y: 1290, size: 62, color: MUTED, html: "File duplikat" },
   ]},
-  { end: c.malam, items: [
+  { end: c.kalau, items: [
     { id: "b7a", t: c.penting, y: 440, size: 100, html: "Nama menu<br>bisa <b>berbeda</b>." },
     { id: "b7b", t: c.beda, y: 860, size: 66, color: MUTED, html: "Tiap merek ponsel." },
     P("b7c", c.cari, 1040, "CARA CEPAT", "Cari “Penyimpanan” atau “Storage” di kolom pencarian Pengaturan"),
+  ]},
+  { end: c.malam, items: [
+    { id: "p8a", t: c.kalau, y: 440, size: 100, color: ACCENT, html: "KALAU MASIH<br>PENUH" },
+    { id: "p8b", t: c.flash, y: 730, size: 66, html: "Pindahkan file besar<br>ke <b>flashdisk</b>." },
+    P("p8c", c.lexar, 930, "PRODUK", "Lexar JumpDrive Dual Drive D400"),
+    { id: "p8d", t: c.colok, y: 1180, size: 58, color: INK, html: "USB-C (Android) + USB-A (laptop)" },
+    { id: "p8e", t: c.kapasitas, y: 1270, size: 58, color: MUTED, html: "32 GB sampai 256 GB" },
+    { id: "p8f", t: c.baca, y: 1360, size: 58, color: MUTED, html: "Baca hingga 130 MB/detik" },
+    { id: "p8g", t: c.ket, y: 1470, size: 58, color: ACCENT, html: "Link di keterangan video" },
   ]},
   { end: null, items: [
     { id: "e1", t: c.malam, y: 440, size: 130, color: ACCENT, html: "MALAM INI." },
@@ -148,7 +160,7 @@ scenes.forEach((sc, si) => {
 });
 
 // ------------------------------------------------------------ captions: key words highlighted
-const KEY = new Set(["penyimpanan", "penuh", "whatsapp", "cache", "offload", "android", "iphone", "cadangkan", "tercadang", "jarang", "bersihkan", "sampah", "duplikat", "tenang", "malam", "paling", "satu", "dua", "tiga", "empat", "lima", "langkah"]);
+const KEY = new Set(["penyimpanan", "penuh", "whatsapp", "cache", "offload", "android", "iphone", "cadangkan", "tercadang", "jarang", "bersihkan", "sampah", "duplikat", "tenang", "flashdisk", "lexar", "malam", "paling", "satu", "dua", "tiga", "empat", "lima", "langkah"]);
 const caps = [];
 {
   const lines = []; let line = [];
