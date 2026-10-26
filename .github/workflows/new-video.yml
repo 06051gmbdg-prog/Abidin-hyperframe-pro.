@@ -1,0 +1,31 @@
+# Makes a new video folder from the illustration template, so nothing has to be copied by hand on a phone.
+# Then edit videos/<name>/script.json (the voice-over) and videos/<name>/storyboard.json (scenes, labels, callouts).
+name: new-video
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "New folder name, lowercase letters, digits and dashes (e.g. baterai-hp)"
+        default: ""
+permissions:
+  contents: write
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy template
+        env:
+          NAME: ${{ inputs.name }}
+        run: |
+          N=$(echo "$NAME" | tr '[:upper:]' '[:lower:]' | tr -c 'a-z0-9\n-' '-' | sed 's/^-*//; s/-*$//')
+          if [ -z "$N" ]; then echo "::error::name is empty"; exit 1; fi
+          if [ -e "videos/$N" ]; then echo "::error::videos/$N already exists - pick another name"; exit 1; fi
+          cp -r videos/_template-ilustrasi "videos/$N"
+          sed -i "s/\"slug\": \"template-ilustrasi\"/\"slug\": \"$N\"/" "videos/$N/script.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "new video folder: $N (from template-ilustrasi)"
+          git push
+          echo "::notice title=Created::videos/$N - now edit script.json and storyboard.json"

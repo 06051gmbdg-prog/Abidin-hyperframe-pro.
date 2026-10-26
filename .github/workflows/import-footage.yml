@@ -1,0 +1,44 @@
+# Copies images from the branch `footage` (made by fal-footage / gemini-footage) into a video's assets/img as 1080x1920 JPG.
+# mapping = "source:target" pairs separated by commas, e.g.  hook1:01.jpg, hook2:02.jpg
+# The source is the file name in branch `footage` WITHOUT extension (png or jpg is found automatically).
+name: import-footage
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Video folder name (e.g. baterai-hp)"
+        default: ""
+      mapping:
+        description: "source:target pairs, e.g. hook1:01.jpg, hook2:02.jpg"
+        default: ""
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import
+        env:
+          VIDEO: ${{ inputs.video }}
+          MAP: ${{ inputs.mapping }}
+        run: |
+          V=$(echo "$VIDEO" | tr '[:upper:]' '[:lower:]' | tr -d ' ')
+          test -d "videos/$V" || { echo "::error::videos/$V does not exist"; exit 1; }
+          git clone -q --branch footage --single-branch "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" /tmp/footage || { echo "::error::branch footage not found - generate an image first"; exit 1; }
+          mkdir -p "videos/$V/assets/img"
+          echo "$MAP" | tr ',' '\n' | while IFS=: read -r SRC DST; do
+            SRC=$(echo "$SRC" | tr -d ' '); DST=$(echo "$DST" | tr -d ' ')
+            [ -z "$SRC" ] && continue
+            F=$(ls /tmp/footage/"$SRC".png /tmp/footage/"$SRC".jpg /tmp/footage/"$SRC".jpeg 2>/dev/null | head -n 1)
+            if [ -z "$F" ]; then echo "::error::$SRC not found in branch footage"; exit 1; fi
+            case "$DST" in *.jpg) ;; *) echo "::error::target must end in .jpg ($DST)"; exit 1;; esac
+            ffmpeg -v error -y -i "$F" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -q:v 3 "videos/$V/assets/img/$DST"
+            echo "imported $SRC -> videos/$V/assets/img/$DST"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -qm "import footage into $V"
+          git push

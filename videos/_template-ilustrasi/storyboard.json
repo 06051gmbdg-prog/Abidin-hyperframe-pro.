@@ -1,0 +1,23 @@
+{
+  "brand": "nama channel",
+  "badgeDefault": "ILUSTRASI",
+  "styleLine": "ilustrasi 3D isometrik, latar krem polos, pencahayaan lembut, warna hangat, tanpa teks, tanpa logo, tanpa orang",
+  "keys": ["baterai", "nol", "panas", "game", "cocok", "pertama", "kedua", "ketiga", "malam"],
+  "scenes": [
+    { "at": null,       "label": "Baterai HP",       "badge": "ILUSTRASI", "img": "01.jpg",
+      "prompt": "sebuah ponsel dengan ikon baterai hampir kosong di atas meja kayu", "zoom": [1.0, 1.12], "pan": [0, -30],
+      "callouts": [ { "at": "diam-diam", "text": "3 kebiasaan perusak", "x": 540, "y": 520 } ] },
+    { "at": "pertama",  "label": "Kebiasaan 1",      "badge": "ILUSTRASI", "img": "02.jpg",
+      "prompt": "ponsel dengan layar baterai 0 persen berwarna merah", "zoom": [1.05, 1.2], "pan": [-20, 0],
+      "callouts": [ { "at": "nol", "text": "0% = stres baterai", "x": 540, "y": 560 } ] },
+    { "at": "kedua",    "label": "Kebiasaan 2",      "badge": "ILUSTRASI", "img": "03.jpg",
+      "prompt": "ponsel yang diisi daya sambil dipakai bermain game, tampak hangat berwarna oranye", "zoom": [1.0, 1.15], "pan": [20, -20],
+      "callouts": [ { "at": "panas", "text": "Panas", "x": 540, "y": 520 } ] },
+    { "at": "ketiga",   "label": "Kebiasaan 3",      "badge": "ILUSTRASI", "img": "04.jpg",
+      "prompt": "dua jenis kabel pengisi daya berbeda di samping ponsel", "zoom": [1.1, 1.0], "pan": [0, 0],
+      "callouts": [ { "at": "cocok", "text": "Pakai yang cocok", "x": 540, "y": 560 } ] },
+    { "at": "malam",    "label": "Mulai malam ini",  "badge": "TIPS",      "img": "05.jpg",
+      "prompt": "ponsel terhubung ke pengisi daya, ikon baterai hijau di meja rapi", "zoom": [1.0, 1.12], "pan": [0, 20],
+      "stat": { "at": "satu", "value": "1", "text": "kebiasaan baru" } }
+  ]
+}

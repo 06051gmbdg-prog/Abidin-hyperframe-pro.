@@ -1,0 +1,15 @@
+{
+  "slug": "template-ilustrasi",
+  "mode": "tutorial",
+  "voiceId": "pNInz6obpgDQGcFmaJgB",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "seed": 42,
+  "voiceSettings": { "stability": 0.5, "similarity_boost": 0.8, "style": 0.2, "speed": 1.0, "use_speaker_boost": true },
+  "scenes": [
+    {
+      "id": "vo",
+      "text": "Baterai HP cepat habis? Ada tiga kebiasaan yang diam-diam merusaknya. Pertama, membiarkan baterai sampai nol persen. Kedua, mengisi daya sambil bermain game, sehingga ponsel jadi panas. Ketiga, memakai pengisi daya yang tidak cocok. Panas adalah musuh utama baterai. Jadi, cabut pengisi daya sebelum penuh, dan jauhkan ponsel dari tempat panas. Mulai malam ini, coba satu kebiasaan baru saja."
+    }
+  ]
+}
