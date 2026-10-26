@@ -23,7 +23,7 @@ jobs:
         env:
           INPUT_VIDEO: ${{ inputs.video }}
         run: |
-          V=$(printf '%s' "$INPUT_VIDEO" | tr 'A-Z' 'a-z' | tr -d ' ')
+          V=$(printf '%s' "$INPUT_VIDEO" | tr 'A-Z' 'a-z' | tr -d ' ' | sed 's#^/*videos/##; s#/*$##')
           if [ ! -f "videos/$V/script.json" ]; then
             echo "::error::videos/$V/script.json not found. Folders available: $(ls videos | tr '\n' ' ')"
             exit 1
