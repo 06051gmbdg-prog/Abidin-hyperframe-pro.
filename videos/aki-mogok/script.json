@@ -1,0 +1,21 @@
+{
+  "slug": "aki-mogok",
+  "mode": "tutorial",
+  "voiceId": "pNInz6obpgDQGcFmaJgB",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "seed": 42,
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "speed": 1.0,
+    "use_speaker_boost": true
+  },
+  "scenes": [
+    {
+      "id": "vo",
+      "text": "Mobil tiba-tiba tidak mau menyala, padahal Anda sedang buru-buru. Tenang, ada tiga hal yang bisa Anda lakukan dulu. Langkah satu. Kenali tandanya. Kalau mesin berputar lambat, lampu dashboard redup, atau klakson terdengar lemah, besar kemungkinan aki Anda tekor. Langkah dua. Jangan paksa starter terus-menerus. Putar sebentar, lalu beri jeda beberapa detik. Starter yang dipaksa bisa cepat panas. Langkah tiga. Kurangi beban listrik. Matikan AC, audio, dan lampu tambahan sebelum mencoba lagi. Kalau masih gagal, Anda butuh tenaga tambahan. Cara lama adalah kabel jumper, tapi itu butuh mobil lain, dan orang yang mau berhenti menolong. Cara yang lebih praktis adalah jump starter portabel. Salah satunya USEMO CI30. Menurut deskripsi produknya, alat ini punya empat fungsi. Jump starter untuk aki mobil, pompa ban elektrik untuk motor dan mobil, power bank dua belas ribu miliamper jam, dan lampu LED untuk keadaan gelap. Apa pun alat yang Anda pakai, baca buku panduan mobil dan petunjuk alatnya dulu. Pastikan juga cocok dengan mobil Anda. Link produknya ada di keterangan video. Hari ini, cek aki dan tekanan ban Anda sebelum perjalanan berikutnya."
+    }
+  ]
+}
