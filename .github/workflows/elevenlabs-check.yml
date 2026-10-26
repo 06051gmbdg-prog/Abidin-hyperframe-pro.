@@ -1,0 +1,26 @@
+# Free check (no characters used): shows the ElevenLabs plan and remaining characters as a notice on the run page.
+name: elevenlabs-check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Subscription
+        env:
+          KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::error::Secret ELEVENLABS_API_KEY is missing"; exit 1; fi
+          R=$(curl -sS -m 30 -w '\n%{http_code}' -H "xi-api-key: $KEY" https://api.elevenlabs.io/v1/user/subscription)
+          CODE=$(echo "$R" | tail -n1); BODY=$(echo "$R" | sed '$d')
+          if [ "$CODE" != "200" ]; then echo "::error title=ElevenLabs HTTP $CODE::$(echo "$BODY" | head -c 400)"; exit 1; fi
+          echo "$BODY" | python3 -c "
+          import json,sys,datetime
+          d=json.load(sys.stdin)
+          used=d.get('character_count',0); lim=d.get('character_limit',0)
+          rs=d.get('next_character_count_reset_unix')
+          reset=datetime.datetime.utcfromtimestamp(rs).strftime('%Y-%m-%d') if rs else '?'
+          print(f\"::notice title=ElevenLabs::tier={d.get('tier')} status={d.get('status')} used={used}/{lim} left={lim-used} reset={reset} commercial_ok={d.get('can_use_instant_voice_cloning')}\")
+          "
