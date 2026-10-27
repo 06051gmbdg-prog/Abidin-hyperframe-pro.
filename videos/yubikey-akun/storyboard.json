@@ -1,0 +1,267 @@
+{
+  "brand": "nama channel",
+  "badgeDefault": "ILUSTRASI",
+  "styleLine": "ilustrasi 3D isometrik, latar krem polos, pencahayaan lembut, warna hangat, tanpa teks, tanpa huruf, tanpa logo, tanpa orang",
+  "keys": [
+    "dibajak",
+    "phishing",
+    "palsu",
+    "unik",
+    "verifikasi",
+    "otp",
+    "fisik",
+    "yubikey",
+    "fido2",
+    "baterai",
+    "cadangan",
+    "tips",
+    "malam",
+    "hari",
+    "langkah",
+    "satu",
+    "dua",
+    "tiga"
+  ],
+  "scenes": [
+    {
+      "at": null,
+      "label": "Akun dibajak?",
+      "badge": "ILUSTRASI",
+      "img": "01.jpg",
+      "prompt": "sebuah ponsel dengan gembok terbuka berwarna merah dan tanda seru di atas meja",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        0,
+        -30
+      ],
+      "callouts": [
+        {
+          "at": "rumit",
+          "text": "Sandi rumit saja tak cukup",
+          "x": 540,
+          "y": 520
+        }
+      ]
+    },
+    {
+      "at": "pesan",
+      "label": "Phishing",
+      "badge": "ILUSTRASI",
+      "img": "02.jpg",
+      "prompt": "sebuah kail pancing menarik amplop dari layar ponsel",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "pan": [
+        -20,
+        0
+      ],
+      "callouts": [
+        {
+          "at": "login",
+          "text": "Pesan palsu minta login",
+          "x": 540,
+          "y": 520
+        }
+      ]
+    },
+    {
+      "at": "langkah",
+      "label": "Langkah 1",
+      "badge": "ILUSTRASI",
+      "img": "03.jpg",
+      "prompt": "brankas kecil terbuka berisi banyak kunci berbeda bentuk dan warna",
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "pan": [
+        20,
+        -20
+      ],
+      "callouts": [
+        {
+          "at": "unik",
+          "text": "Sandi unik tiap akun",
+          "x": 540,
+          "y": 520
+        }
+      ]
+    },
+    {
+      "at": "langkah",
+      "label": "Langkah 2",
+      "badge": "ILUSTRASI",
+      "img": "04.jpg",
+      "prompt": "ponsel dan perisai dengan dua gembok berlapis di depannya",
+      "zoom": [
+        1.1,
+        1.0
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "callouts": [
+        {
+          "at": "verifikasi",
+          "text": "Verifikasi 2 langkah",
+          "x": 540,
+          "y": 520
+        },
+        {
+          "at": "otp",
+          "text": "Jangan bagikan kode OTP",
+          "x": 540,
+          "y": 630
+        }
+      ]
+    },
+    {
+      "at": "langkah",
+      "label": "Langkah 3",
+      "badge": "ILUSTRASI",
+      "img": "05.jpg",
+      "prompt": "sebuah kunci keamanan USB kecil berwarna hitam dan emas tergeletak di samping laptop",
+      "zoom": [
+        1.0,
+        1.14
+      ],
+      "pan": [
+        0,
+        20
+      ],
+      "callouts": [
+        {
+          "at": "fisik",
+          "text": "Kunci keamanan fisik",
+          "x": 540,
+          "y": 520
+        }
+      ]
+    },
+    {
+      "at": "yubikey",
+      "label": "YubiKey 5 Series",
+      "badge": "PRODUK",
+      "img": "05.jpg",
+      "prompt": "(pakai gambar 05)",
+      "zoom": [
+        1.14,
+        1.0
+      ],
+      "pan": [
+        0,
+        -20
+      ],
+      "callouts": [
+        {
+          "at": "fido2",
+          "text": "FIDO2 · U2F · OTP",
+          "x": 540,
+          "y": 480
+        },
+        {
+          "at": "konektor",
+          "text": "USB-A / USB-C / NFC / Lightning",
+          "x": 540,
+          "y": 590
+        },
+        {
+          "at": "baterai",
+          "text": "Tanpa baterai",
+          "x": 540,
+          "y": 700
+        },
+        {
+          "at": "ip",
+          "text": "Tahan air IP68",
+          "x": 540,
+          "y": 810
+        }
+      ]
+    },
+    {
+      "at": "tips",
+      "label": "Tips penting",
+      "badge": "TIPS",
+      "img": "06.jpg",
+      "prompt": "dua kunci keamanan USB identik di samping ponsel dan laptop, satu kunci ditandai sebagai cadangan dengan kotak kecil",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "callouts": [
+        {
+          "at": "daftarkan",
+          "text": "Daftarkan 2 kunci",
+          "x": 540,
+          "y": 520
+        },
+        {
+          "at": "cocok",
+          "text": "Pilih konektor yang cocok",
+          "x": 540,
+          "y": 630
+        }
+      ]
+    },
+    {
+      "at": "link",
+      "label": "Produk afiliasi",
+      "badge": "PRODUK",
+      "img": "06.jpg",
+      "prompt": "(pakai gambar 06)",
+      "zoom": [
+        1.12,
+        1.0
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "callouts": [
+        {
+          "at": "keterangan",
+          "text": "Link di keterangan video",
+          "x": 540,
+          "y": 520
+        },
+        {
+          "at": "video",
+          "text": "Mengandung link afiliasi",
+          "x": 540,
+          "y": 630
+        }
+      ]
+    },
+    {
+      "at": "hari",
+      "label": "Mulai hari ini",
+      "badge": "TIPS",
+      "img": "07.jpg",
+      "prompt": "ponsel dengan perisai bercentang hijau besar di layar, di atas meja rapi",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        0,
+        20
+      ],
+      "stat": {
+        "at": "aktifkan",
+        "value": "2",
+        "text": "langkah verifikasi di e-mail"
+      }
+    }
+  ]
+}

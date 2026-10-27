@@ -1,0 +1,194 @@
+{
+  "brand": "",
+  "badgeDefault": "ILUSTRASI",
+  "styleLine": "ilustrasi 3D isometrik, latar krem polos, pencahayaan lembut, warna hangat, komposisi sederhana dengan satu objek utama di tengah, tanpa teks, tanpa huruf, tanpa logo, tanpa merek, tanpa orang",
+  "keys": [
+    "password",
+    "palsu",
+    "satu",
+    "dua",
+    "tiga",
+    "fisik",
+    "yubikey",
+    "fido",
+    "usb",
+    "nfc",
+    "lightning",
+    "baterai",
+    "cadangan",
+    "malam"
+  ],
+  "scenes": [
+    {
+      "at": null,
+      "label": "Akun diretas",
+      "badge": "ILUSTRASI",
+      "img": "01.jpg",
+      "prompt": "laptop dengan layar login, sebuah kail pancing besar menjuntai di depan layar mengincar ikon gembok kecil",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        0,
+        -30
+      ],
+      "callouts": [
+        {
+          "at": "palsu",
+          "text": "Situs palsu",
+          "x": 540,
+          "y": 540
+        }
+      ]
+    },
+    {
+      "at": "satu",
+      "label": "Langkah 1",
+      "badge": "ILUSTRASI",
+      "img": "02.jpg",
+      "prompt": "beberapa kunci berwarna berbeda, masing-masing dekat satu pintu kecil berwarna sama",
+      "zoom": [
+        1.05,
+        1.18
+      ],
+      "pan": [
+        -20,
+        0
+      ],
+      "callouts": [
+        {
+          "at": "berbeda",
+          "text": "1 akun = 1 password",
+          "x": 540,
+          "y": 560
+        }
+      ]
+    },
+    {
+      "at": "dua",
+      "label": "Langkah 2",
+      "badge": "ILUSTRASI",
+      "img": "03.jpg",
+      "prompt": "ponsel dengan gelembung pesan kosong, sebuah kail pancing mendekat dari samping",
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "pan": [
+        20,
+        -20
+      ],
+      "callouts": [
+        {
+          "at": "email",
+          "text": "Mulai dari email",
+          "x": 540,
+          "y": 540
+        }
+      ]
+    },
+    {
+      "at": "tiga",
+      "label": "Langkah 3",
+      "badge": "ILUSTRASI",
+      "img": "04.jpg",
+      "prompt": "sebuah kunci keamanan kecil berbentuk USB generik tanpa merek menempel di bagian belakang ponsel, tanda centang hijau melayang di atasnya",
+      "zoom": [
+        1.1,
+        1.0
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "callouts": [
+        {
+          "at": "fisik",
+          "text": "Kunci fisik",
+          "x": 540,
+          "y": 560
+        }
+      ]
+    },
+    {
+      "at": "yubikey",
+      "label": "Contoh produk",
+      "badge": "ILUSTRASI",
+      "img": "05.jpg",
+      "prompt": "tiga kunci keamanan generik tanpa merek berjajar: satu berkonektor USB persegi, satu berkonektor oval kecil, satu dekat ponsel dengan gelombang nirkabel",
+      "zoom": [
+        1.0,
+        1.14
+      ],
+      "pan": [
+        0,
+        20
+      ],
+      "callouts": [
+        {
+          "at": "fido",
+          "text": "FIDO2 · U2F · OTP",
+          "x": 540,
+          "y": 520
+        },
+        {
+          "at": "baterai",
+          "text": "Tanpa baterai",
+          "x": 540,
+          "y": 620
+        }
+      ]
+    },
+    {
+      "at": "pilih",
+      "label": "Sebelum beli",
+      "badge": "ILUSTRASI",
+      "img": "06.jpg",
+      "prompt": "dua kunci keamanan generik tanpa merek pada satu gantungan kunci, satu lagi tersimpan rapi di kotak kecil sebagai cadangan",
+      "zoom": [
+        1.12,
+        1.0
+      ],
+      "pan": [
+        0,
+        -20
+      ],
+      "callouts": [
+        {
+          "at": "cadangan",
+          "text": "Daftarkan 2 kunci",
+          "x": 540,
+          "y": 520
+        },
+        {
+          "at": "produknya",
+          "text": "Link di keterangan video",
+          "x": 540,
+          "y": 620
+        },
+        {
+          "at": "keterangan",
+          "text": "Mengandung link afiliasi",
+          "x": 540,
+          "y": 720
+        }
+      ]
+    },
+    {
+      "at": "malam",
+      "label": "Malam ini",
+      "badge": "TIPS",
+      "img": "07.jpg",
+      "prompt": "gembok tertutup berwarna hijau di depan layar laptop dengan ikon amplop surat",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        0,
+        20
+      ]
+    }
+  ]
+}

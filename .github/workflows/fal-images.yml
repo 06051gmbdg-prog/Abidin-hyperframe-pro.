@@ -1,0 +1,65 @@
+# Generates ALL missing illustrations of one video in one run (paid: ~US$0.19 per image at gpt-image-2 high, 1088x1920).
+# Reads videos/<video>/storyboard.json: every scene with `img` + `prompt` whose file is missing in assets/img is generated
+# with  styleLine + ", " + prompt, converted to 1080x1920 JPG, and committed. Images that already exist are never regenerated.
+#   dry = yes (default)  -> only lists what would be generated and the estimated cost; nothing is spent
+#   dry = no             -> spends money
+name: fal-images
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Video folder name (e.g. yubikey)"
+        default: ""
+      dry:
+        description: "yes = only show plan and cost (free). no = generate (paid)"
+        default: "yes"
+permissions:
+  contents: write
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Generate
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          INPUT_VIDEO: ${{ inputs.video }}
+          DRY: ${{ inputs.dry }}
+        run: |
+          V=$(printf '%s' "$INPUT_VIDEO" | tr 'A-Z' 'a-z' | tr -d ' ' | sed 's#^/*videos/##; s#/*$##')
+          D="videos/$V"
+          test -f "$D/storyboard.json" || { echo "::error::$D/storyboard.json not found"; exit 1; }
+          if [ -z "$FAL_KEY" ]; then echo "::error::Secret FAL_KEY is missing"; exit 1; fi
+          mkdir -p "$D/assets/img"
+          node -e '
+            const sb=JSON.parse(require("fs").readFileSync(process.argv[1]+"/storyboard.json","utf8"));
+            for(const s of sb.scenes){ if(s.img&&s.prompt) console.log(s.img+"\t"+(sb.styleLine?sb.styleLine+", ":"")+s.prompt); }
+          ' "$D" > /tmp/plan.tsv
+          TODO=0
+          while IFS=$'\t' read -r IMG PROMPT; do
+            [ -f "$D/assets/img/$IMG" ] || TODO=$((TODO+1))
+          done < /tmp/plan.tsv
+          echo "::notice title=Plan::$TODO image(s) to generate, about US\$$(python3 -c "print(round($TODO*0.19,2))")"
+          if [ "$DRY" != "no" ]; then echo "dry run - nothing generated. Run again with dry=no to spend."; exit 0; fi
+          while IFS=$'\t' read -r IMG PROMPT; do
+            [ -f "$D/assets/img/$IMG" ] && { echo "skip $IMG (exists)"; continue; }
+            set -o pipefail
+            node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --out "/tmp/$IMG.png" --size 1088x1920 --quality high 2>&1 | tee /tmp/fal.log || { echo "::error title=fal.ai error on $IMG::$(tail -n 6 /tmp/fal.log | tr '\n' ' ' | cut -c1-1200)"; break; }
+            ffmpeg -v error -y -i "/tmp/$IMG.png" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -q:v 3 "$D/assets/img/$IMG"
+            echo "generated $IMG"
+          done < /tmp/plan.tsv
+      - name: Commit images
+        if: ${{ inputs.dry == 'no' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -qm "fal-images: illustrations for ${{ inputs.video }}"
+          git push

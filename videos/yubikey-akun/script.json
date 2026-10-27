@@ -1,0 +1,21 @@
+{
+  "slug": "yubikey-akun",
+  "mode": "tutorial",
+  "voiceId": "pNInz6obpgDQGcFmaJgB",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "seed": 42,
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "speed": 1.0,
+    "use_speaker_boost": true
+  },
+  "scenes": [
+    {
+      "id": "vo",
+      "text": "Akun media sosial atau e-mail Anda dibajak, padahal kata sandinya rumit. Biasanya itu terjadi lewat pesan palsu yang menyuruh Anda login. Ada tiga lapis pengaman yang bisa dipasang. Langkah satu. Pakai kata sandi unik untuk setiap akun, dan simpan di pengelola kata sandi. Langkah dua. Aktifkan verifikasi dua langkah di e-mail, bank, dan media sosial. Jangan pernah membagikan kode OTP kepada siapa pun. Langkah tiga. Naik ke kunci keamanan fisik. Salah satunya YubiKey seri lima dari Yubico. Menurut situs resminya, kunci ini mendukung FIDO2, U2F, dan OTP, dengan pilihan konektor USB A, USB C, NFC, atau Lightning. Tanpa baterai, dan tahan air dengan standar IP enam puluh delapan. Tips penting: daftarkan dua kunci, satu sebagai cadangan, dan pilih konektor yang cocok dengan ponsel atau laptop Anda. Link produknya ada di keterangan video. Hari ini, aktifkan verifikasi dua langkah di e-mail Anda."
+    }
+  ]
+}

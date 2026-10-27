@@ -1,0 +1,21 @@
+{
+  "slug": "yubikey",
+  "mode": "tutorial",
+  "voiceId": "pNInz6obpgDQGcFmaJgB",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "seed": 42,
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "speed": 1.0,
+    "use_speaker_boost": true
+  },
+  "scenes": [
+    {
+      "id": "vo",
+      "text": "Password Anda sudah panjang dan rumit, tapi akun tetap bisa dibobol. Penyebabnya sering bukan password yang lemah, melainkan situs palsu yang menipu Anda. Ada tiga langkah untuk melindungi akun. Langkah satu. Pakai password berbeda di setiap akun, dan simpan di pengelola password. Langkah dua. Aktifkan verifikasi dua langkah, terutama di email Anda. Kode lewat SMS lebih baik daripada tanpa perlindungan, tapi kode itu masih bisa diminta oleh situs palsu. Langkah tiga. Pakai kunci keamanan fisik. Anda cukup menyambungkannya atau menempelkannya ke ponsel, lalu menyentuhnya untuk masuk. Salah satu contohnya YubiKey 5 Series dari Yubico. Menurut Yubico, kunci ini mendukung FIDO2, U2F, OTP, dan smart card, dengan pilihan konektor USB A, USB C, NFC, dan Lightning. Tidak memakai baterai, dan tahan air. Pilih varian yang cocok dengan perangkat Anda, dan daftarkan dua kunci, satu sebagai cadangan. Pastikan juga situs atau aplikasi yang Anda pakai mendukung kunci keamanan. Link produknya ada di keterangan video. Malam ini, aktifkan verifikasi dua langkah di akun email Anda."
+    }
+  ]
+}
