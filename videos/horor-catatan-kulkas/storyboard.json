@@ -1,0 +1,98 @@
+{
+  "series": "MALAM 1",
+  "place": "KONTRAKAN",
+  "keys": [
+    "catatan",
+    "aturan",
+    "keran",
+    "televisi",
+    "layarnya",
+    "bayangan",
+    "ketukan",
+    "kulkas",
+    "perempuan",
+    "namaku",
+    "basah",
+    "tahu",
+    "malam"
+  ],
+  "scenes": [
+    {
+      "at": null,
+      "type": "kitchen",
+      "time": "21:40"
+    },
+    {
+      "at": "secarik",
+      "type": "note",
+      "mode": "intro",
+      "time": "21:41"
+    },
+    {
+      "at": "pukul",
+      "type": "tap",
+      "time": "02:14",
+      "overlays": [
+        {
+          "at": "aturan",
+          "kind": "rule",
+          "n": 1,
+          "text": "KERAN MENYALA SENDIRI?<br>JANGAN DIMATIKAN"
+        }
+      ]
+    },
+    {
+      "at": "televisi",
+      "type": "tv",
+      "time": "02:30",
+      "overlays": [
+        {
+          "at": "aturan",
+          "kind": "rule",
+          "n": 2,
+          "text": "TV MENYALA?<br>JANGAN TATAP LAYARNYA"
+        },
+        {
+          "at": "bayangan",
+          "kind": "shadow"
+        }
+      ]
+    },
+    {
+      "at": "ketukan",
+      "type": "fridge",
+      "time": "03:33",
+      "overlays": [
+        {
+          "at": "aturan",
+          "kind": "rule",
+          "n": 3,
+          "text": "JANGAN BUKA KULKAS<br>SEBELUM MATAHARI TERBIT"
+        }
+      ]
+    },
+    {
+      "at": "perempuan",
+      "type": "fridge",
+      "time": "03:33",
+      "waves": true
+    },
+    {
+      "at": "bawah",
+      "type": "note",
+      "mode": "full",
+      "time": "03:34",
+      "overlays": [
+        {
+          "at": "tulisannya",
+          "kind": "red"
+        }
+      ]
+    },
+    {
+      "at": "malam",
+      "type": "end",
+      "time": "03:33"
+    }
+  ]
+}

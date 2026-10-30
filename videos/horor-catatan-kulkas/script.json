@@ -1,0 +1,21 @@
+{
+  "slug": "horor-catatan-kulkas",
+  "mode": "tutorial",
+  "voiceId": "nPczCjzI2devNBz1zQrb",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "seed": 42,
+  "voiceSettings": {
+    "stability": 0.6,
+    "similarity_boost": 0.8,
+    "style": 0.2,
+    "speed": 1.0,
+    "use_speaker_boost": true
+  },
+  "scenes": [
+    {
+      "id": "vo",
+      "text": "Aku baru pindah ke rumah kontrakan ini. Di pintu kulkas, ada secarik catatan tulisan tangan. Isinya tiga aturan. Pukul dua lewat empat belas menit pagi, aku terbangun karena suara air. Keran dapur mengalir sendiri. Aturan satu, tertulis di catatan itu. Kalau keran menyala sendiri, jangan dimatikan. Aku diam. Air terus mengalir, lalu berhenti sendiri. Pukul dua lewat tiga puluh, televisi di ruang tengah menyala. Layarnya kosong. Aturan dua. Kalau televisi menyala, jangan menatap layarnya. Tatap lantai sampai ia padam. Aku menatap lantai. Tapi di layar itu, ada bayangan seseorang berdiri tepat di belakangku. Pukul tiga lewat tiga puluh tiga, terdengar ketukan dari dalam kulkas. Aturan tiga. Jangan pernah membuka kulkas sebelum matahari terbit. Ketukan itu makin keras. Lalu terdengar suara perempuan, memanggil namaku. Aku belum pernah menyebut namaku pada siapa pun di rumah ini. Di bawah aturan tiga, ada satu baris yang baru kusadari. Tulisannya masih basah. Ia tahu kamu sudah membaca. Malam kedua, dimulai besok. Ikuti untuk lanjutannya."
+    }
+  ]
+}
