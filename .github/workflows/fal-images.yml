@@ -46,16 +46,17 @@ jobs:
             [ -f "$D/assets/img/$IMG" ] || TODO=$((TODO+1))
           done < /tmp/plan.tsv
           echo "::notice title=Plan::$TODO image(s) to generate, about US\$$(python3 -c "print(round($TODO*0.19,2))")"
-          if [ "$DRY" != "no" ]; then echo "dry run - nothing generated. Run again with dry=no to spend."; exit 0; fi
+          DRY=$(printf '%s' "$DRY" | tr 'A-Z' 'a-z' | tr -d ' ')
+          if [ "$DRY" != "no" ]; then echo "::notice title=DRY RUN::nothing generated (dry=$DRY). Run again with dry = no to spend."; exit 0; fi
           while IFS=$'\t' read -r IMG PROMPT; do
             [ -f "$D/assets/img/$IMG" ] && { echo "skip $IMG (exists)"; continue; }
             set -o pipefail
-            node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --out "/tmp/$IMG.png" --size 1088x1920 --quality high 2>&1 | tee /tmp/fal.log || { echo "::error title=fal.ai error on $IMG::$(tail -n 6 /tmp/fal.log | tr '\n' ' ' | cut -c1-1200)"; break; }
-            ffmpeg -v error -y -i "/tmp/$IMG.png" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -q:v 3 "$D/assets/img/$IMG"
+            node plugins/hyperframe-pro/scripts/fal.mjs image --prompt "$PROMPT" --out "/tmp/$IMG.png" --size 1088x1920 --quality high </dev/null 2>&1 | tee /tmp/fal.log || { echo "::error title=fal.ai error on $IMG::$(tail -n 6 /tmp/fal.log | tr '\n' ' ' | cut -c1-1200)"; break; }
+            ffmpeg -nostdin -v error -y -i "/tmp/$IMG.png" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -q:v 3 "$D/assets/img/$IMG"
             echo "generated $IMG"
           done < /tmp/plan.tsv
       - name: Commit images
-        if: ${{ inputs.dry == 'no' }}
+        if: ${{ contains(fromJSON('["no","No","NO"]'), inputs.dry) }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
