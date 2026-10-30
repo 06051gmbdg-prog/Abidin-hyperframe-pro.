@@ -107,7 +107,7 @@
           "at": "fisik",
           "text": "Kunci fisik",
           "x": 540,
-          "y": 560
+          "y": 660
         }
       ]
     },
@@ -145,7 +145,7 @@
       "label": "Sebelum beli",
       "badge": "ILUSTRASI",
       "img": "06.jpg",
-      "prompt": "dua kunci keamanan generik tanpa merek pada satu gantungan kunci, satu lagi tersimpan rapi di kotak kecil sebagai cadangan",
+      "prompt": "dua kunci keamanan elektronik kecil pipih berbentuk USB generik tanpa merek, bukan kunci pintu, tersambung ke satu gantungan, dan satu kunci keamanan lagi tersimpan rapi di kotak kecil sebagai cadangan",
       "zoom": [
         1.12,
         1.0
