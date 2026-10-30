@@ -1,0 +1,39 @@
+# Makes a SHORT Indonesian sample (about 110 characters each) for a few ElevenLabs voices, so you can listen and choose.
+# Costs about 110 credits per voice. Samples are published to branch `voice-samples`.
+name: voice-test
+on:
+  workflow_dispatch:
+    inputs:
+      voices:
+        description: "name:voiceId pairs, comma separated"
+        default: "jessica:cgSgspJ2msm6clMCkdW9,sarah:EXAVITQu4vr4xnSDxMaL,rachel:21m00Tcm4TlvDq8ikWAM"
+      text:
+        description: "Sample text"
+        default: "Halo! Password sudah kuat, tapi akun tetap bisa dibobol? Tenang, ada tiga langkah mudah untuk melindunginya."
+permissions:
+  contents: write
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate samples
+        env:
+          KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          VOICES: ${{ inputs.voices }}
+          TEXT: ${{ inputs.text }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::error::Secret ELEVENLABS_API_KEY is missing"; exit 1; fi
+          mkdir -p /tmp/out
+          echo "$VOICES" | tr ',' '\n' | while IFS=: read -r NAME VID; do
+            NAME=$(echo "$NAME" | tr -d ' '); VID=$(echo "$VID" | tr -d ' ')
+            [ -z "$VID" ] && continue
+            BODY=$(python3 -c 'import json,os;print(json.dumps({"text":os.environ["TEXT"],"model_id":"eleven_multilingual_v2","language_code":"id","voice_settings":{"stability":0.5,"similarity_boost":0.8,"style":0.3,"use_speaker_boost":True}}))')
+            CODE=$(curl -sS -m 90 -o "/tmp/out/$NAME.mp3" -w '%{http_code}' -X POST "https://api.elevenlabs.io/v1/text-to-speech/$VID?output_format=mp3_44100_128" -H "xi-api-key: $KEY" -H "Content-Type: application/json" -d "$BODY" </dev/null)
+            if [ "$CODE" != "200" ]; then echo "::error title=voice $NAME HTTP $CODE::$(head -c 300 /tmp/out/$NAME.mp3)"; rm -f "/tmp/out/$NAME.mp3"; else echo "ok $NAME"; fi
+          done
+          ls -la /tmp/out
+      - name: Publish to branch voice-samples
+        run: |
+          cd /tmp/out && git init -q -b voice-samples && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ls *.mp3 >/dev/null 2>&1 || { echo "::error::no samples were generated"; exit 1; }
+          git add -A && git commit -qm "voice samples" && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" voice-samples
