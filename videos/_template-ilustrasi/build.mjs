@@ -24,6 +24,8 @@ const fx = (n) => +n.toFixed(3);
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
 const VO_START = 0.35;
+const FAST = !!SB.fast;                 // storyboard "fast": true -> quick cuts, stronger zoom, a small punch at every scene start
+const FADE = FAST ? 0.1 : 0.3;
 
 function TA(word, after) {
   for (const w of VO.words) {
@@ -62,13 +64,14 @@ S.forEach((sc, i) => {
     <div class="brand">${esc(SB.brand || "")}</div>
   </div>`);
   const first = i === 0, at = first ? 0 : fx(Math.max(0, sc.start - 0.15));
-  tl.push(`tl.fromTo("#${id}",{autoAlpha:0},{autoAlpha:1,duration:${first ? 0.01 : 0.3},ease:"none"},${at});`);
-  const z = sc.zoom || [1, 1.1], p = sc.pan || [0, 0];
+  tl.push(`tl.fromTo("#${id}",{autoAlpha:0},{autoAlpha:1,duration:${first ? 0.01 : FADE},ease:"none"},${at});`);
+  const z = sc.zoom || (FAST ? [1.0, 1.22] : [1, 1.1]), p = sc.pan || (FAST ? [(i % 2 ? -40 : 40), -30] : [0, 0]);
   tl.push(`tl.fromTo("#${id}i",{scale:${z[0]},x:0,y:0},{scale:${z[1]},x:${p[0]},y:${p[1]},duration:${dur},ease:"none"},${at});`);
+  if (FAST && !first) tl.push(`tl.fromTo("#${id}",{scale:1.07},{scale:1,duration:0.25,ease:"power3.out"},${at});`);
   if (i + 1 < S.length) {
     const out = fx(Math.max(sc.end - 0.0, at + 0.9));
-    tl.push(`tl.to("#${id}",{autoAlpha:0,duration:0.25,ease:"none"},${fx(out)});`);
-    tl.push(`tl.set("#${id}",{autoAlpha:0},${fx(out + 0.25)});`);
+    tl.push(`tl.to("#${id}",{autoAlpha:0,duration:${FADE},ease:"none"},${fx(out)});`);
+    tl.push(`tl.set("#${id}",{autoAlpha:0},${fx(out + FADE)});`);
   }
   sc.callouts.forEach((c, k) => {
     const cid = `${id}c${k}`;
@@ -89,7 +92,7 @@ const KEY = new Set((SB.keys || []).map(norm));
 const caps = [];
 {
   const lines = []; let line = [];
-  for (const w of VO.words) { line.push(w); if (line.length === 3 || /[.?!:,]$/.test(w.text)) { lines.push(line); line = []; } }
+  for (const w of VO.words) { line.push(w); if (line.length === (FAST ? 2 : 3) || /[.?!:,]$/.test(w.text)) { lines.push(line); line = []; } }
   if (line.length) lines.push(line);
   lines.forEach((ln, i) => {
     const st = fx(VO_START + ln[0].start - 0.06), nx = lines[i + 1];

@@ -25,3 +25,7 @@ Tanpa gambar pun video tetap bisa dirender: adegan memakai kotak pengganti beris
 - Maksimal 2:59. Jangan mempercepat suara; kurangi kata.
 - Tulis angka dan sumber yang bisa diverifikasi. Jangan meniru logo, artikel, atau akun instansi nyata. Beri label "ILUSTRASI" untuk gambar AI.
 - Link afiliasi hanya di caption/bio, dengan keterangan "mengandung link afiliasi".
+
+## Tempo cepat
+Tambahkan `"fast": true` di storyboard.json: pergantian adegan 0,1 detik (bukan 0,3), zoom lebih kuat dengan geser bergantian kiri/kanan, hentakan kecil setiap adegan baru, dan caption 2 kata per baris.
+Untuk tempo yang benar-benar cepat, tulis lebih banyak adegan pendek (satu adegan per kalimat, sekitar 3–4 detik) dengan gambar masing-masing.
