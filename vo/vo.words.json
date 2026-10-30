@@ -1,0 +1,974 @@
+[
+ {
+  "id": "w0",
+  "text": "Password",
+  "start": 0.058,
+  "end": 0.534
+ },
+ {
+  "id": "w1",
+  "text": "Anda",
+  "start": 0.592,
+  "end": 0.894
+ },
+ {
+  "id": "w2",
+  "text": "sudah",
+  "start": 0.94,
+  "end": 1.196
+ },
+ {
+  "id": "w3",
+  "text": "panjang",
+  "start": 1.219,
+  "end": 1.672
+ },
+ {
+  "id": "w4",
+  "text": "dan",
+  "start": 1.73,
+  "end": 1.846
+ },
+ {
+  "id": "w5",
+  "text": "rumit,",
+  "start": 1.927,
+  "end": 2.368
+ },
+ {
+  "id": "w6",
+  "text": "tapi",
+  "start": 2.45,
+  "end": 2.728
+ },
+ {
+  "id": "w7",
+  "text": "akun",
+  "start": 2.786,
+  "end": 3.053
+ },
+ {
+  "id": "w8",
+  "text": "tetap",
+  "start": 3.123,
+  "end": 3.425
+ },
+ {
+  "id": "w9",
+  "text": "bisa",
+  "start": 3.483,
+  "end": 3.692
+ },
+ {
+  "id": "w10",
+  "text": "dibobol.",
+  "start": 3.738,
+  "end": 4.47
+ },
+ {
+  "id": "w11",
+  "text": "Penyebabnya",
+  "start": 4.795,
+  "end": 5.306
+ },
+ {
+  "id": "w12",
+  "text": "sering",
+  "start": 5.352,
+  "end": 5.596
+ },
+ {
+  "id": "w13",
+  "text": "bukan",
+  "start": 5.631,
+  "end": 5.875
+ },
+ {
+  "id": "w14",
+  "text": "password",
+  "start": 5.944,
+  "end": 6.339
+ },
+ {
+  "id": "w15",
+  "text": "yang",
+  "start": 6.397,
+  "end": 6.513
+ },
+ {
+  "id": "w16",
+  "text": "lemah,",
+  "start": 6.571,
+  "end": 7.001
+ },
+ {
+  "id": "w17",
+  "text": "melainkan",
+  "start": 7.152,
+  "end": 7.79
+ },
+ {
+  "id": "w18",
+  "text": "situs",
+  "start": 7.883,
+  "end": 8.243
+ },
+ {
+  "id": "w19",
+  "text": "palsu",
+  "start": 8.324,
+  "end": 8.905
+ },
+ {
+  "id": "w20",
+  "text": "yang",
+  "start": 9.079,
+  "end": 9.288
+ },
+ {
+  "id": "w21",
+  "text": "menipu",
+  "start": 9.346,
+  "end": 9.752
+ },
+ {
+  "id": "w22",
+  "text": "Anda.",
+  "start": 9.868,
+  "end": 10.426
+ },
+ {
+  "id": "w23",
+  "text": "Ada",
+  "start": 10.67,
+  "end": 10.89
+ },
+ {
+  "id": "w24",
+  "text": "tiga",
+  "start": 10.937,
+  "end": 11.157
+ },
+ {
+  "id": "w25",
+  "text": "langkah",
+  "start": 11.204,
+  "end": 11.598
+ },
+ {
+  "id": "w26",
+  "text": "untuk",
+  "start": 11.68,
+  "end": 11.935
+ },
+ {
+  "id": "w27",
+  "text": "melindungi",
+  "start": 11.993,
+  "end": 12.516
+ },
+ {
+  "id": "w28",
+  "text": "akun.",
+  "start": 12.597,
+  "end": 13.305
+ },
+ {
+  "id": "w29",
+  "text": "Langkah",
+  "start": 13.63,
+  "end": 14.036
+ },
+ {
+  "id": "w30",
+  "text": "satu.",
+  "start": 14.06,
+  "end": 14.745
+ },
+ {
+  "id": "w31",
+  "text": "Pakai",
+  "start": 15.07,
+  "end": 15.36
+ },
+ {
+  "id": "w32",
+  "text": "password",
+  "start": 15.406,
+  "end": 15.847
+ },
+ {
+  "id": "w33",
+  "text": "berbeda",
+  "start": 15.905,
+  "end": 16.37
+ },
+ {
+  "id": "w34",
+  "text": "di",
+  "start": 16.44,
+  "end": 16.509
+ },
+ {
+  "id": "w35",
+  "text": "setiap",
+  "start": 16.556,
+  "end": 16.939
+ },
+ {
+  "id": "w36",
+  "text": "akun,",
+  "start": 17.032,
+  "end": 17.612
+ },
+ {
+  "id": "w37",
+  "text": "dan",
+  "start": 17.786,
+  "end": 17.937
+ },
+ {
+  "id": "w38",
+  "text": "simpan",
+  "start": 18.007,
+  "end": 18.448
+ },
+ {
+  "id": "w39",
+  "text": "di",
+  "start": 18.506,
+  "end": 18.553
+ },
+ {
+  "id": "w40",
+  "text": "pengelola",
+  "start": 18.599,
+  "end": 18.994
+ },
+ {
+  "id": "w41",
+  "text": "password.",
+  "start": 19.052,
+  "end": 19.748
+ },
+ {
+  "id": "w42",
+  "text": "Langkah",
+  "start": 20.329,
+  "end": 20.758
+ },
+ {
+  "id": "w43",
+  "text": "dua.",
+  "start": 20.805,
+  "end": 21.351
+ },
+ {
+  "id": "w44",
+  "text": "Aktifkan",
+  "start": 21.838,
+  "end": 22.407
+ },
+ {
+  "id": "w45",
+  "text": "verifikasi",
+  "start": 22.488,
+  "end": 23.173
+ },
+ {
+  "id": "w46",
+  "text": "dua",
+  "start": 23.22,
+  "end": 23.464
+ },
+ {
+  "id": "w47",
+  "text": "langkah,",
+  "start": 23.522,
+  "end": 24.125
+ },
+ {
+  "id": "w48",
+  "text": "terutama",
+  "start": 24.241,
+  "end": 24.729
+ },
+ {
+  "id": "w49",
+  "text": "di",
+  "start": 24.764,
+  "end": 24.845
+ },
+ {
+  "id": "w50",
+  "text": "email",
+  "start": 24.926,
+  "end": 25.344
+ },
+ {
+  "id": "w51",
+  "text": "Anda.",
+  "start": 25.46,
+  "end": 26.111
+ },
+ {
+  "id": "w52",
+  "text": "Kode",
+  "start": 26.54,
+  "end": 26.819
+ },
+ {
+  "id": "w53",
+  "text": "lewat",
+  "start": 26.854,
+  "end": 27.132
+ },
+ {
+  "id": "w54",
+  "text": "SMS",
+  "start": 27.202,
+  "end": 27.666
+ },
+ {
+  "id": "w55",
+  "text": "lebih",
+  "start": 27.771,
+  "end": 27.98
+ },
+ {
+  "id": "w56",
+  "text": "baik",
+  "start": 28.015,
+  "end": 28.282
+ },
+ {
+  "id": "w57",
+  "text": "daripada",
+  "start": 28.351,
+  "end": 28.758
+ },
+ {
+  "id": "w58",
+  "text": "tanpa",
+  "start": 28.816,
+  "end": 29.141
+ },
+ {
+  "id": "w59",
+  "text": "perlindungan,",
+  "start": 29.187,
+  "end": 30.128
+ },
+ {
+  "id": "w60",
+  "text": "tapi",
+  "start": 30.267,
+  "end": 30.557
+ },
+ {
+  "id": "w61",
+  "text": "kode",
+  "start": 30.592,
+  "end": 30.859
+ },
+ {
+  "id": "w62",
+  "text": "itu",
+  "start": 30.929,
+  "end": 31.138
+ },
+ {
+  "id": "w63",
+  "text": "masih",
+  "start": 31.196,
+  "end": 31.44
+ },
+ {
+  "id": "w64",
+  "text": "bisa",
+  "start": 31.463,
+  "end": 31.695
+ },
+ {
+  "id": "w65",
+  "text": "diminta",
+  "start": 31.753,
+  "end": 32.241
+ },
+ {
+  "id": "w66",
+  "text": "oleh",
+  "start": 32.345,
+  "end": 32.647
+ },
+ {
+  "id": "w67",
+  "text": "situs",
+  "start": 32.682,
+  "end": 33.019
+ },
+ {
+  "id": "w68",
+  "text": "palsu.",
+  "start": 33.089,
+  "end": 33.808
+ },
+ {
+  "id": "w69",
+  "text": "Langkah",
+  "start": 34.308,
+  "end": 34.702
+ },
+ {
+  "id": "w70",
+  "text": "tiga.",
+  "start": 34.737,
+  "end": 35.318
+ },
+ {
+  "id": "w71",
+  "text": "Pakai",
+  "start": 35.991,
+  "end": 36.316
+ },
+ {
+  "id": "w72",
+  "text": "kunci",
+  "start": 36.363,
+  "end": 36.723
+ },
+ {
+  "id": "w73",
+  "text": "keamanan",
+  "start": 36.781,
+  "end": 37.245
+ },
+ {
+  "id": "w74",
+  "text": "fisik.",
+  "start": 37.291,
+  "end": 37.907
+ },
+ {
+  "id": "w75",
+  "text": "Anda",
+  "start": 38.22,
+  "end": 38.418
+ },
+ {
+  "id": "w76",
+  "text": "cukup",
+  "start": 38.476,
+  "end": 38.673
+ },
+ {
+  "id": "w77",
+  "text": "menyambungkannya",
+  "start": 38.708,
+  "end": 39.474
+ },
+ {
+  "id": "w78",
+  "text": "atau",
+  "start": 39.509,
+  "end": 39.695
+ },
+ {
+  "id": "w79",
+  "text": "menempelkannya",
+  "start": 39.718,
+  "end": 40.426
+ },
+ {
+  "id": "w80",
+  "text": "ke",
+  "start": 40.484,
+  "end": 40.542
+ },
+ {
+  "id": "w81",
+  "text": "ponsel,",
+  "start": 40.589,
+  "end": 41.355
+ },
+ {
+  "id": "w82",
+  "text": "lalu",
+  "start": 41.518,
+  "end": 41.726
+ },
+ {
+  "id": "w83",
+  "text": "menyentuhnya",
+  "start": 41.761,
+  "end": 42.342
+ },
+ {
+  "id": "w84",
+  "text": "untuk",
+  "start": 42.4,
+  "end": 42.632
+ },
+ {
+  "id": "w85",
+  "text": "masuk.",
+  "start": 42.69,
+  "end": 43.317
+ },
+ {
+  "id": "w86",
+  "text": "Salah",
+  "start": 43.874,
+  "end": 44.13
+ },
+ {
+  "id": "w87",
+  "text": "satu",
+  "start": 44.141,
+  "end": 44.339
+ },
+ {
+  "id": "w88",
+  "text": "contohnya",
+  "start": 44.397,
+  "end": 44.931
+ },
+ {
+  "id": "w89",
+  "text": "YubiKey",
+  "start": 45.035,
+  "end": 45.593
+ },
+ {
+  "id": "w90",
+  "text": "5",
+  "start": 45.732,
+  "end": 45.953
+ },
+ {
+  "id": "w91",
+  "text": "Series",
+  "start": 46.034,
+  "end": 46.359
+ },
+ {
+  "id": "w92",
+  "text": "dari",
+  "start": 46.44,
+  "end": 46.637
+ },
+ {
+  "id": "w93",
+  "text": "Yubico.",
+  "start": 46.707,
+  "end": 47.45
+ },
+ {
+  "id": "w94",
+  "text": "Menurut",
+  "start": 47.682,
+  "end": 48.007
+ },
+ {
+  "id": "w95",
+  "text": "Yubico,",
+  "start": 48.077,
+  "end": 48.774
+ },
+ {
+  "id": "w96",
+  "text": "kunci",
+  "start": 48.843,
+  "end": 49.168
+ },
+ {
+  "id": "w97",
+  "text": "ini",
+  "start": 49.238,
+  "end": 49.377
+ },
+ {
+  "id": "w98",
+  "text": "mendukung",
+  "start": 49.412,
+  "end": 49.853
+ },
+ {
+  "id": "w99",
+  "text": "FIDO2,",
+  "start": 49.9,
+  "end": 50.724
+ },
+ {
+  "id": "w100",
+  "text": "U2F,",
+  "start": 50.84,
+  "end": 51.699
+ },
+ {
+  "id": "w101",
+  "text": "OTP,",
+  "start": 51.78,
+  "end": 52.349
+ },
+ {
+  "id": "w102",
+  "text": "dan",
+  "start": 52.384,
+  "end": 52.535
+ },
+ {
+  "id": "w103",
+  "text": "smart",
+  "start": 52.605,
+  "end": 52.895
+ },
+ {
+  "id": "w104",
+  "text": "card,",
+  "start": 52.965,
+  "end": 53.452
+ },
+ {
+  "id": "w105",
+  "text": "dengan",
+  "start": 53.592,
+  "end": 53.835
+ },
+ {
+  "id": "w106",
+  "text": "pilihan",
+  "start": 53.893,
+  "end": 54.277
+ },
+ {
+  "id": "w107",
+  "text": "konektor",
+  "start": 54.346,
+  "end": 54.88
+ },
+ {
+  "id": "w108",
+  "text": "USB",
+  "start": 54.962,
+  "end": 55.438
+ },
+ {
+  "id": "w109",
+  "text": "A,",
+  "start": 55.681,
+  "end": 55.914
+ },
+ {
+  "id": "w110",
+  "text": "USB",
+  "start": 55.983,
+  "end": 56.401
+ },
+ {
+  "id": "w111",
+  "text": "C,",
+  "start": 56.529,
+  "end": 56.854
+ },
+ {
+  "id": "w112",
+  "text": "NFC,",
+  "start": 56.947,
+  "end": 57.458
+ },
+ {
+  "id": "w113",
+  "text": "dan",
+  "start": 57.493,
+  "end": 57.644
+ },
+ {
+  "id": "w114",
+  "text": "Lightning.",
+  "start": 57.76,
+  "end": 58.375
+ },
+ {
+  "id": "w115",
+  "text": "Tidak",
+  "start": 58.619,
+  "end": 58.897
+ },
+ {
+  "id": "w116",
+  "text": "memakai",
+  "start": 58.932,
+  "end": 59.315
+ },
+ {
+  "id": "w117",
+  "text": "baterai,",
+  "start": 59.373,
+  "end": 59.907
+ },
+ {
+  "id": "w118",
+  "text": "dan",
+  "start": 59.954,
+  "end": 60.105
+ },
+ {
+  "id": "w119",
+  "text": "tahan",
+  "start": 60.174,
+  "end": 60.488
+ },
+ {
+  "id": "w120",
+  "text": "air.",
+  "start": 60.569,
+  "end": 61.103
+ },
+ {
+  "id": "w121",
+  "text": "Pilih",
+  "start": 61.428,
+  "end": 61.8
+ },
+ {
+  "id": "w122",
+  "text": "varian",
+  "start": 61.835,
+  "end": 62.264
+ },
+ {
+  "id": "w123",
+  "text": "yang",
+  "start": 62.334,
+  "end": 62.473
+ },
+ {
+  "id": "w124",
+  "text": "cocok",
+  "start": 62.531,
+  "end": 62.868
+ },
+ {
+  "id": "w125",
+  "text": "dengan",
+  "start": 62.926,
+  "end": 63.123
+ },
+ {
+  "id": "w126",
+  "text": "perangkat",
+  "start": 63.181,
+  "end": 63.588
+ },
+ {
+  "id": "w127",
+  "text": "Anda,",
+  "start": 63.657,
+  "end": 64.099
+ },
+ {
+  "id": "w128",
+  "text": "dan",
+  "start": 64.273,
+  "end": 64.447
+ },
+ {
+  "id": "w129",
+  "text": "daftarkan",
+  "start": 64.505,
+  "end": 65.144
+ },
+ {
+  "id": "w130",
+  "text": "dua",
+  "start": 65.202,
+  "end": 65.387
+ },
+ {
+  "id": "w131",
+  "text": "kunci,",
+  "start": 65.434,
+  "end": 65.968
+ },
+ {
+  "id": "w132",
+  "text": "satu",
+  "start": 66.177,
+  "end": 66.583
+ },
+ {
+  "id": "w133",
+  "text": "sebagai",
+  "start": 66.664,
+  "end": 67.036
+ },
+ {
+  "id": "w134",
+  "text": "cadangan.",
+  "start": 67.082,
+  "end": 67.756
+ },
+ {
+  "id": "w135",
+  "text": "Pastikan",
+  "start": 68,
+  "end": 68.441
+ },
+ {
+  "id": "w136",
+  "text": "juga",
+  "start": 68.499,
+  "end": 68.754
+ },
+ {
+  "id": "w137",
+  "text": "situs",
+  "start": 68.813,
+  "end": 69.207
+ },
+ {
+  "id": "w138",
+  "text": "atau",
+  "start": 69.289,
+  "end": 69.556
+ },
+ {
+  "id": "w139",
+  "text": "aplikasi",
+  "start": 69.625,
+  "end": 70.229
+ },
+ {
+  "id": "w140",
+  "text": "yang",
+  "start": 70.264,
+  "end": 70.391
+ },
+ {
+  "id": "w141",
+  "text": "Anda",
+  "start": 70.45,
+  "end": 70.647
+ },
+ {
+  "id": "w142",
+  "text": "pakai",
+  "start": 70.693,
+  "end": 71.042
+ },
+ {
+  "id": "w143",
+  "text": "mendukung",
+  "start": 71.088,
+  "end": 71.564
+ },
+ {
+  "id": "w144",
+  "text": "kunci",
+  "start": 71.611,
+  "end": 71.947
+ },
+ {
+  "id": "w145",
+  "text": "keamanan.",
+  "start": 72.005,
+  "end": 72.748
+ },
+ {
+  "id": "w146",
+  "text": "Link",
+  "start": 73.073,
+  "end": 73.294
+ },
+ {
+  "id": "w147",
+  "text": "produknya",
+  "start": 73.329,
+  "end": 73.863
+ },
+ {
+  "id": "w148",
+  "text": "ada",
+  "start": 73.944,
+  "end": 74.2
+ },
+ {
+  "id": "w149",
+  "text": "di",
+  "start": 74.246,
+  "end": 74.316
+ },
+ {
+  "id": "w150",
+  "text": "keterangan",
+  "start": 74.35,
+  "end": 74.803
+ },
+ {
+  "id": "w151",
+  "text": "video.",
+  "start": 74.861,
+  "end": 75.465
+ },
+ {
+  "id": "w152",
+  "text": "Malam",
+  "start": 75.976,
+  "end": 76.255
+ },
+ {
+  "id": "w153",
+  "text": "ini,",
+  "start": 76.324,
+  "end": 76.522
+ },
+ {
+  "id": "w154",
+  "text": "aktifkan",
+  "start": 76.556,
+  "end": 77.102
+ },
+ {
+  "id": "w155",
+  "text": "verifikasi",
+  "start": 77.172,
+  "end": 77.822
+ },
+ {
+  "id": "w156",
+  "text": "dua",
+  "start": 77.892,
+  "end": 78.147
+ },
+ {
+  "id": "w157",
+  "text": "langkah",
+  "start": 78.193,
+  "end": 78.646
+ },
+ {
+  "id": "w158",
+  "text": "di",
+  "start": 78.727,
+  "end": 78.844
+ },
+ {
+  "id": "w159",
+  "text": "akun",
+  "start": 78.913,
+  "end": 79.169
+ },
+ {
+  "id": "w160",
+  "text": "email",
+  "start": 79.227,
+  "end": 79.494
+ },
+ {
+  "id": "w161",
+  "text": "Anda.",
+  "start": 79.587,
+  "end": 80.028
+ }
+]
