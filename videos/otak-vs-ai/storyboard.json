@@ -1,207 +1,146 @@
 {
-  "brand": "",
-  "badgeDefault": "ILUSTRASI",
-  "fast": true,
   "keys": [
-    "cepat",
+    "ai",
+    "otak",
     "neuron",
-    "watt",
-    "listrik",
-    "menghitung",
-    "pola",
-    "raksasa",
+    "jaringan",
+    "kecepatan",
+    "stamina",
+    "belajar",
     "empati",
-    "kreativitas",
-    "salah",
-    "menang",
+    "manusia",
     "unggul",
-    "manusia"
+    "menggantikan",
+    "mulai"
   ],
   "scenes": [
     {
       "at": null,
-      "label": "Otak manusia",
-      "img": "01-otak.svg",
-      "zoom": [
-        1.0,
-        1.15
-      ],
-      "pan": [
-        0,
-        -20
-      ],
-      "fade": 0.1
-    },
-    {
-      "at": "berpikir",
-      "label": "Jadi jaringan",
-      "img": "02-jaringan.svg",
-      "zoom": [
-        1.0,
-        1.15
-      ],
-      "pan": [
-        0,
-        -20
-      ],
-      "fade": 0.6
-    },
-    {
-      "at": "cepat",
-      "label": "Muncul AI",
-      "img": "03-robot.svg",
-      "zoom": [
-        1.0,
-        1.15
-      ],
-      "pan": [
-        0,
-        -20
-      ],
-      "fade": 0.6
+      "type": "brain",
+      "label": "OTAK vs AI",
+      "badge": "ILUSTRASI",
+      "head": "AI BISA BERPIKIR<br>LEBIH CEPAT?"
     },
     {
       "at": "otak",
-      "label": "Otak manusia",
-      "img": "04-neuron.svg",
-      "callouts": [
-        {
-          "at": "delapan",
-          "text": "±86 miliar neuron",
-          "x": 540,
-          "y": 1210
-        },
-        {
-          "at": "dua",
-          "text": "±20 watt",
-          "x": 540,
-          "y": 1300
-        },
-        {
-          "at": "lampu",
-          "text": "Setara lampu kecil",
-          "x": 540,
-          "y": 1390
-        }
-      ]
-    },
-    {
-      "at": "AI",
+      "type": "brainstats",
+      "label": "OTAK MANUSIA",
       "badge": "ILUSTRASI",
-      "label": "AI di komputer",
-      "img": "05-chip.svg",
-      "callouts": [
+      "overlays": [
         {
-          "at": "listrik",
-          "text": "Sinyal listrik",
-          "x": 540,
-          "y": 1390
+          "at": "neuron",
+          "kind": "stat",
+          "y": 1130,
+          "big": "±86 miliar",
+          "small": "neuron"
+        },
+        {
+          "at": "watt",
+          "kind": "stat",
+          "y": 1330,
+          "big": "±20 watt",
+          "small": "daya otak"
         }
       ]
     },
     {
-      "at": "Hasilnya",
-      "label": "Kekuatan AI",
-      "img": "03-robot.svg",
-      "callouts": [
+      "at": "jaringan",
+      "type": "network",
+      "label": "JARINGAN DIGITAL",
+      "badge": "ILUSTRASI"
+    },
+    {
+      "at": "mari",
+      "type": "versus",
+      "label": "MANUSIA vs AI",
+      "badge": "ILUSTRASI",
+      "head": "SIAPA LEBIH<br>UNGGUL?"
+    },
+    {
+      "at": "satu",
+      "type": "compare",
+      "label": "PERBANDINGAN 1",
+      "badge": "ILUSTRASI",
+      "title": "KECEPATAN",
+      "num": "SATU",
+      "L": "Berpikir pelan dan hati-hati",
+      "R": "Memproses data dalam sekejap",
+      "overlays": [
         {
-          "at": "menghitung",
-          "text": "Menghitung cepat",
-          "x": 540,
-          "y": 1210
-        },
-        {
-          "at": "pola",
-          "text": "Mencari pola",
-          "x": 540,
-          "y": 1300
-        },
-        {
-          "at": "raksasa",
-          "text": "Data raksasa",
-          "x": 540,
-          "y": 1390
+          "at": "unggul",
+          "kind": "win",
+          "side": "R"
         }
       ]
     },
     {
-      "at": "manusia",
-      "label": "Kekuatan manusia",
-      "img": "06-manusia.svg",
-      "callouts": [
+      "at": "dua",
+      "type": "compare",
+      "label": "PERBANDINGAN 2",
+      "badge": "ILUSTRASI",
+      "title": "STAMINA",
+      "num": "DUA",
+      "L": "Bisa lelah dan bosan",
+      "R": "Bekerja tanpa henti",
+      "overlays": [
         {
-          "at": "sedikit",
-          "text": "Belajar dari contoh sedikit",
-          "x": 540,
-          "y": 1120
-        },
-        {
-          "at": "akal",
-          "text": "Akal sehat",
-          "x": 540,
-          "y": 1210
-        },
-        {
-          "at": "empati",
-          "text": "Empati",
-          "x": 540,
-          "y": 1300
-        },
-        {
-          "at": "kreativitas",
-          "text": "Kreativitas",
-          "x": 540,
-          "y": 1390
+          "at": "lelah",
+          "kind": "win",
+          "side": "R"
         }
       ]
     },
     {
-      "at": "AI",
-      "label": "Kelemahan AI",
-      "img": "07-robot-salah.svg",
-      "callouts": [
+      "at": "tiga",
+      "type": "compare",
+      "label": "PERBANDINGAN 3",
+      "badge": "ILUSTRASI",
+      "title": "BELAJAR",
+      "num": "TIGA",
+      "L": "Cukup beberapa contoh",
+      "R": "Butuh data yang sangat banyak",
+      "overlays": [
         {
-          "at": "salah",
-          "text": "Kadang salah, tapi yakin",
-          "x": 540,
-          "y": 1390
+          "at": "beberapa",
+          "kind": "win",
+          "side": "L"
         }
       ]
     },
     {
-      "at": "bukan",
-      "label": "Bukan soal menang",
-      "img": "08-timbangan.svg",
-      "callouts": [
+      "at": "empat",
+      "type": "compare",
+      "label": "PERBANDINGAN 4",
+      "badge": "ILUSTRASI",
+      "title": "EMPATI & KONTEKS",
+      "num": "EMPAT",
+      "L": "Memahami perasaan dan situasi",
+      "R": "Belum benar-benar merasakannya",
+      "overlays": [
         {
-          "at": "makna",
-          "text": "Manusia: makna & penilaian",
-          "x": 540,
-          "y": 1300
-        },
-        {
-          "at": "kecepatan",
-          "text": "AI: kecepatan & skala",
-          "x": 540,
-          "y": 1390
+          "at": "memahami",
+          "kind": "win",
+          "side": "L"
         }
       ]
     },
     {
-      "at": "tidak",
-      "badge": "PESAN",
-      "label": "Kesimpulan",
-      "img": "09-bersama.svg",
-      "bigs": [
+      "at": "menggantikan",
+      "type": "equation",
+      "label": "KESIMPULAN",
+      "badge": "TIPS",
+      "overlays": [
         {
-          "at": "@start",
-          "html": "AI tidak<br>menggantikan<br>semua manusia."
-        },
-        {
-          "at": "tapi",
-          "html": "Tapi manusia<br>yang pakai AI<br><b>bisa unggul.</b>"
+          "at": "unggul",
+          "kind": "final"
         }
       ]
+    },
+    {
+      "at": "mulai",
+      "type": "cta",
+      "label": "MULAI HARI INI",
+      "badge": "TIPS"
     }
   ]
 }

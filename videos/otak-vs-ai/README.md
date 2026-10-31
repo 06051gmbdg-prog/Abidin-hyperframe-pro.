@@ -1,6 +1,6 @@
 # Video: Otak manusia vs AI
 
-Motion grafik dari kode (SVG di `assets/img/*.svg`, dibuat oleh skrip, bukan gambar AI), gaya sama dengan "kita bedah": label kiri atas, lencana ILUSTRASI, callout putih, caption berwarna.
-Hook: otak → jaringan digital (dissolve 0,6 dtk) → robot AI. Ending: "AI tidak menggantikan semua manusia. Tapi manusia yang menggunakan AI bisa unggul."
-Suara: ElevenLabs Brian. Angka: ±86 miliar neuron dan ±20 watt (angka umum yang dikutip untuk otak manusia).
-Tidak ada produk afiliasi di video ini.
+Hook "Bagaimana jika AI bisa berpikir lebih cepat dari manusia?", otak berubah menjadi jaringan digital, robot AI, empat perbandingan (kecepatan, stamina, belajar, empati dan konteks), ending "AI tidak menggantikan semua manusia. Tapi manusia yang menggunakan AI bisa unggul."
+Semua digambar dengan kode (SVG + HTML), tanpa gambar AI. Suara: ElevenLabs Brian. ±850 karakter.
+Angka otak (±86 miliar neuron, ±20 watt) adalah angka yang lazim dikutip; sebut sebagai perkiraan.
+Tidak ada produk afiliasi di video ini (lihat catatan di percakapan).
